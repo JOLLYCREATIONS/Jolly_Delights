@@ -1,13 +1,10 @@
 <template>
-    <div class="relative w-full h-screen flex flex-col justify-center">
-        <img src="/header.webp" class="w-full h-screen object-cover  absolute z-10">
+    <div class="relative w-full h-[50vh] flex flex-col justify-center">
+        <img src="/header.webp" class="w-full h-[50vh] object-cover  absolute z-10 top-0">
     </div>
-    <div class="p-4 rounded-xl bg-[#fffff] text-[#000000] font-bold text-6xl w-full">ITEMS</div>
-    <div class="grid grid-cols-1 lg:grid-cols-2 lg:grid-cols-3 lg:grid-cols-4 items-center rounded-2xl gap-8">
-            <MiscBox v-for="food in foods" :key="food.name" :name="food.name" :image="food.image" />
-            <MiscBox v-for="food in foods" :key="food.name" :name="food.name" :image="food.image" />
-            <MiscBox v-for="food in foods" :key="food.name" :name="food.name" :image="food.image" />
-            <MiscBox v-for="food in foods" :key="food.name" :name="food.name" :image="food.image" />
+    <div class="p-4 mt-8 rounded-xl bg-[#fffff] text-center text-[#000000] font-bold text-6xl w-full">ITEMS</div>
+    <div class="mt-8 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 items-center rounded-2xl max-w-7xl mx-auto gap-8">
+            <MiscBox v-for="food in foods.concat(foods.concat(foods.concat(foods.concat(foods))))" :key="food.name" :name="food.name" :image="food.image" class="mx-auto" />
         </div>
 
 </template>

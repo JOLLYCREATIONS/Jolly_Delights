@@ -1,5 +1,5 @@
 <template>
-    <div><img class="rounded-xl" :src="image" />
+    <div><img class="rounded-xl w-full md:w-48" :src="image" />
         <div>{{ name }}</div>
     </div>
 </template>
