@@ -41,14 +41,15 @@ const menu = [
     { name: "Parotta", image: "/parotta.jpg" },
     { name: "Dosa", image: "/dosa.jpg" },
 ]
-const events=[
-{
-      title: {
-        en: "An awareness event for women and children - Chennai Central Railway Station - presence of DIG Balakrishnan and Judge Jayanthi and police officers.",
-        ta:
-          "சென்னை சென்ட்ரல் ரயில்வே நிலையத்தில் பெண்களுக்கும் குழந்தைகளுக்குமான விழிப்புணர்வு நிகழ்வு டிஐஜி பாலகிருஷ்ணன் மற்றும் ஜட்ஜ் ஜெயந்தி மற்றும் காவல்துறையினர்கள் முன்னிலையில் சிறப்பாக நடைபெற்றது",
-      },
-      image: "/idli.jpg"
+const events = [
+    {
+        image: "/idli.jpg"
+    },
+    {
+        image: "/dosa.jpg"
+    },
+    {
+        image: "/idli.jpg"
     },
 ]
 </script>

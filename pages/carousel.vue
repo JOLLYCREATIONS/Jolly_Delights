@@ -3,7 +3,7 @@
       <div class="absolute inset-0 flex items-center justify-center">
         <div
           class="w-full h-full flex items-center justify-center transition-transform duration-500 transform"
-          :style="`transform: translateX(${-currentIndex * 100}%) rotateY(${-currentIndex * 45}deg);`"
+          :style="`transform: translateX(${-currentIndex * 60}%) rotateY(${-currentIndex * 45}deg);`"
         >
           <div
             v-for="(item, index) in items"
@@ -31,7 +31,7 @@
   export default {
     data() {
       return {
-        currentIndex: 0,
+        currentIndex: 1,
         items: [
           { image: '/idly.jpg/400x200' },
           { image: '/dosa.jpg/400x200' },
