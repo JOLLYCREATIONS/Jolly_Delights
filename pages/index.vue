@@ -30,7 +30,7 @@
                 </button>
             </div>
             <div><span class="font-bold text-xl md:text-3xl lg:text-4xl text-[#206038]">Try Our New Arrivals</span>
-                <div class="grid grid-cols-1 lg:grid-cols-2 lg:grid-cols-3 lg:grid-cols-4 items-center mt-5 gap-8">
+                <div class="grid grid-cols-1 lg:grid-cols-4 items-center mt-5 gap-8">
                     <MiscBox v-for="food in foods" :key="food.name" :name="food.name" :image="food.image" />
                     <MiscBox v-for="food in foods" :key="food.name" :name="food.name" :image="food.image" />
                 </div>
@@ -107,6 +107,7 @@ const foods = [
     { name: "Idly", image: "/idli.jpg" },
     { name: "Idly", image: "/idli.jpg" },
     { name: "Parotta", image: "/parotta.jpg" },
+    
 
 ]
 const menu = [
