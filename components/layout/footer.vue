@@ -11,11 +11,11 @@
                 </div>
             </div>
             <hr class="w-full border border-black" />
-            <div class="flex justify-between items-center">
-                <div>Link 1</div>
-                <div class="flex items-center gap-4">
-                    <div>Link 2</div>
-                    <div>Link 3</div>
+            <div class="flex justify-between items-center py-2 text-xs">
+                <div>All rights reserved © Jolly Delights</div>
+                <div class="flex items-center divide-x-[1px] divide-black">
+                    <a href="" class="px-1">Privacy Policy</a>
+                    <a href="" class="px-1">Terms & Conditions</a>
                 </div>
             </div>
         </div>

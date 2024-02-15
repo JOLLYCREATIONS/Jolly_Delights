@@ -1,10 +1,10 @@
 <template>
     <div class="w-full flex flex-col items-center">
-        <div class="flex flex-row items-center space-x-4 max-w-6xl w-full overflow-x-hidden relative">
-            <div class="relative inset-0 flex flex-row gap-8 justify-start transition-all duration-500 ease-in-out transform w-full md:w-[60rem]"
-                :style="{ left: `-${current * 20}rem` }">
+        <div class="flex flex-row items-center space-x-4 md:w-[56rem] w-full overflow-x-hidden relative p-[1rem]">
+            <div class="relative inset-0 flex flex-row gap-8 justify-start transition-all duration-500 ease-in-out transform w-full md:w-[54rem]"
+                :style="{ left: `-${current * 18}rem` }">
                 <div v-for="item in images" :key="item"
-                    class="p-[0.5rem] relative flex-shrink-0 flex flex-col items-start justify-start h-60 w-[19rem] px-2 py-4 shadow-xl rounded-xl">
+                    class="p-[0.5rem] relative flex-shrink-0 flex flex-col items-start justify-start h-60 w-[17rem] px-2 py-4 shadow-xl rounded-xl">
                     <div class="text-lg font-bold">{{ item.name }}</div>
                     <MiscRating :score="item.ratings * 20" />
                     <div class="text-sm">{{ item.review }}</div>
@@ -53,18 +53,18 @@ const img = computed(() => {
 let interval;
 onMounted(() => {
     interval = setInterval(() => {
-        current.value === images.length - 2 ? (current.value = 0) : next();
+        current.value === images.length - 3 ? (current.value = 0) : next();
     }, 6000);
 });
 
 onBeforeUnmount(() => clearInterval(interval));
 
 const next = () =>
-    current.value === images.length - 2
+    current.value === images.length - 3
         ? (current.value = 0)
         : current.value++;
 const prev = () =>
     current.value === 0
-        ? (current.value = images.length - 2)
+        ? (current.value = images.length - 3)
         : current.value--;
 </script>
