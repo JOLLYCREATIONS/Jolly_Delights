@@ -4,10 +4,10 @@
             <video src="/vid.mp4" muted autoplay :controls="false" loop
                 class="w-full h-screen object-cover  absolute z-10"></video>
             <div class="w-full h-screen inset-0 bg-black/40 z-20 absolute" />
-            <div class="relative z-20 max-w-7xl text-6xl text-white px-4 top-16 left-8 font-bold">Want to taste something
+            <div class="relative z-20 max-w-7xl text-4xl lg:text-6xl text-white px-4 top-16 left-8 font-bold">Want to taste something
                 Delicious?
             </div>
-            <div class="relative z-20 max-w-7xl text-3xl text-white px-4 top-16 left-8">Here is the solution for all your
+            <div class="relative z-20 max-w-7xl text-xl lg:text-3xl text-white px-4 top-16 left-8">Here is the solution for all your
                 party orders.
             </div>
         </div>
@@ -20,14 +20,7 @@
                 <button
                     class="p-2 uppercase bg-yellow-600 text-black font-black text-xs rounded-lg flex items-center gap-2 mx-auto">
 
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="feather feather-shopping-cart">
-                        <circle cx="9" cy="21" r="1"></circle>
-                        <circle cx="20" cy="21" r="1"></circle>
-                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
-                    </svg>
-                    <span>Proceed To Order</span>
+                    <span>Order Now</span>
 
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
