@@ -4,14 +4,14 @@
             <video src="/vid.mp4" muted autoplay :controls="false" loop
                 class="w-full h-screen object-cover  absolute z-10"></video>
             <div class="w-full h-screen inset-0 bg-black/40 z-20 absolute" />
-            <div class="relative z-20 max-w-7xl text-4xl lg:text-6xl text-white px-4 top-16 left-8 font-bold">Want to taste something
+            <div class="relative z-20 max-w-[90 rem] text-4xl lg:text-6xl text-white px-4 top-16 left-8 font-bold">Want to taste something
                 Delicious?
             </div>
-            <div class="relative z-20 max-w-7xl text-xl lg:text-3xl text-white px-4 top-16 left-8">Here is the solution for all your
+            <div class="relative z-20 max-w-[90 rem] text-xl lg:text-3xl text-white px-4 top-16 left-8">Here is the solution for all your
                 party orders.
             </div>
         </div>
-        <div class="max-w-7xl mx-auto flex flex-col gap-12">
+        <div class="max-w-[90 rem] mx-auto flex flex-col gap-12">
             <div class="p-4 rounded-3xl bg-[#CBE7D8] text-black text-2xl ">
                 <div class="p-4 w-full flex items-center gap-4">
                     <span class="text-black font-bold text-xl md:text-3xl lg:text-4xl text-center underline mx-auto">Popular Items</span>
@@ -30,7 +30,7 @@
                 </button>
             </div>
             <div><span class="font-bold text-xl md:text-3xl lg:text-4xl text-[#206038]">Try Our New Arrivals</span>
-                <div class="grid grid-cols-1 lg:grid-cols-4 items-center mt-5 gap-8">
+                <div class="grid grid-cols-1 lg:grid-cols-6 items-center mt-5 gap-8">
                     <MiscBox v-for="food in foods" :key="food.name" :name="food.name" :image="food.image" />
                     <MiscBox v-for="food in foods" :key="food.name" :name="food.name" :image="food.image" />
                 </div>
@@ -45,13 +45,13 @@
                     </svg><span class="text-black font-bold text-xl md:text-3xl lg:text-4xl">Search By Category</span>
                 </div>
 
-                <div class="grid grid-cols-1 lg:grid-cols-5  md:grid-cols-4 items-center mt-5  gap-8">
+                <div class="grid grid-cols-1 lg:grid-cols-8  md:grid-cols-4 items-center mt-5  gap-8">
                     <MiscCircle v-for="food in menu" :key="food.name" :name="food.name" :image="food.image" />
                     <MiscCircle v-for="food in menu" :key="food.name" :name="food.name" :image="food.image" />
                 </div>
             </div>
             <div class="mt-8 bg-[#CBE7D8] w-full p-4 rounded-3xl">
-                <div class="lg:flex items-center gap-2 justify-between max-w-7xl">
+                <div class="lg:flex items-center gap-2 justify-between max-w-[90 rem]">
                     <div class="flex flex-col items-center gap-2 mx-auto">
 
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -107,15 +107,15 @@ const foods = [
     { name: "Idly", image: "/idli.jpg" },
     { name: "Idly", image: "/idli.jpg" },
     { name: "Parotta", image: "/parotta.jpg" },
-    
-
+    { name: "Parotta", image: "/parotta.jpg" },
+    { name: "Idly", image: "/idli.jpg" },
 ]
 const menu = [
     { name: "Dosa", image: "/dosa.jpg" },
     { name: "Idly", image: "/idli.jpg" },
     { name: "Idly", image: "/idli.jpg" },
     { name: "Parotta", image: "/parotta.jpg" },
-    { name: "Dosa", image: "/dosa.jpg" },
+ 
 ]
 
 const reviews = [
