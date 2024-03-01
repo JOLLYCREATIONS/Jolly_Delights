@@ -37,6 +37,5 @@ const foods = [
     { name: "Dosa", image: "/dosa.jpg" },
     { name: "Idly", image: "/idli.jpg" },
     { name: "Idly", image: "/idli.jpg" },
- 
 ]
 </script>
