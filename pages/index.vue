@@ -1,7 +1,7 @@
 <template>
     <div class="flex flex-col w-full items-center space-y-12">
         <div class="relative w-full h-screen flex flex-col justify-start">
-            <video src="/vid.mp4" muted autoplay :controls="false" loop
+            <video src="/promo.mp4" muted autoplay :controls="false" loop
                 class="w-full h-screen object-cover  absolute z-10"></video>
             <div class="w-full h-screen inset-0 bg-black/40 z-20 absolute" />
             <div
