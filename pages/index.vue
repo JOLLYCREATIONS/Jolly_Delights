@@ -4,17 +4,22 @@
             <video src="/vid.mp4" muted autoplay :controls="false" loop
                 class="w-full h-screen object-cover  absolute z-10"></video>
             <div class="w-full h-screen inset-0 bg-black/40 z-20 absolute" />
-            <div class="relative z-20 max-w-[90 rem] text-4xl lg:text-6xl text-white px-4 top-16 left-8 font-bold">Want to taste something
+            <div
+                class="relative z-20 max-w-7xl xl:max-w-[90 rem] text-4xl lg:text-6xl text-white px-4 top-16 left-8 font-bold">
+                Want to taste something
                 Delicious?
             </div>
-            <div class="relative z-20 max-w-[90 rem] text-xl lg:text-3xl text-white px-4 top-16 left-8">Here is the solution for all your
+            <div class="relative z-20 max-w-7xl xl:max-w-[90 rem] text-xl lg:text-3xl text-white px-4 top-16 left-8">
+                Here is the solution for all your
                 party orders.
             </div>
         </div>
-        <div class="max-w-[90 rem] mx-auto flex flex-col gap-12">
+        <div class="max-w-7xl xl:max-w-[90 rem] mx-auto flex flex-col gap-12">
             <div class="p-4 rounded-3xl bg-[#CBE7D8] text-black text-2xl ">
                 <div class="p-4 w-full flex items-center gap-4">
-                    <span class="text-black font-bold text-xl md:text-3xl lg:text-4xl text-center underline mx-auto">Popular Items</span>
+                    <span
+                        class="text-black font-bold text-xl md:text-3xl lg:text-4xl text-center underline mx-auto">Popular
+                        Items</span>
                 </div>
                 <MiscCards :items="menu.concat(menu)" />
                 <button
@@ -50,57 +55,59 @@
                     <MiscCircle v-for="food in menu" :key="food.name" :name="food.name" :image="food.image" />
                 </div>
             </div>
-            <div class="mt-8 bg-[#CBE7D8] w-full p-4 rounded-3xl">
-                <div class="lg:flex items-center gap-2 justify-between max-w-[90 rem]">
-                    <div class="flex flex-col items-center gap-2 mx-auto">
 
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="feather feather-users">
-                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                            <circle cx="9" cy="7" r="4"></circle>
-                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-                        </svg>
-                        <span class="text-2xl md:text-4xl lg:text-5xl font-semibold">
-                            <MiscCounter :max="987" />
-                        </span>
-                        <span class="text-xl font-semibold">Happy Customers</span>
-                    </div>
-                    <div class="flex flex-col items-center gap-2 mx-auto">
+        </div>
+        <div class="mt-8 bg-[#CBE7D8] w-full mt-12 p-4">
+            <div class="lg:flex items-center gap-2 justify-between w-full">
+                <div class="flex flex-col items-center gap-2 mx-auto">
 
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="feather feather-edit">
-                            <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
-                            <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
-                        </svg>
-                        <span class="text-2xl md:text-4xl lg:text-5xl font-semibold">
-                            <MiscCounter :max="480" />
-                        </span>
-                        <span class="text-xl font-semibold">Customer Reviews</span>
-                    </div>
-                    <div class="flex flex-col items-center gap-2 mx-auto">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-users">
+                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="9" cy="7" r="4"></circle>
+                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                        <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                    </svg>
+                    <span class="text-2xl md:text-4xl lg:text-5xl font-semibold">
+                        <MiscCounter :max="987" />
+                    </span>
+                    <span class="text-xl font-semibold">Happy Customers</span>
+                </div>
+                <div class="flex flex-col items-center gap-2 mx-auto">
 
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="feather feather-award">
-                            <circle cx="12" cy="8" r="7"></circle>
-                            <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
-                        </svg>
-                        <span class="text-2xl md:text-4xl lg:text-5xl font-semibold">
-                            <MiscCounter :max="220" />
-                        </span>
-                        <span class="text-xl font-semibold">Events Completed</span>
-                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-edit">
+                        <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
+                        <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
+                    </svg>
+                    <span class="text-2xl md:text-4xl lg:text-5xl font-semibold">
+                        <MiscCounter :max="480" />
+                    </span>
+                    <span class="text-xl font-semibold">Customer Reviews</span>
+                </div>
+                <div class="flex flex-col items-center gap-2 mx-auto">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-award">
+                        <circle cx="12" cy="8" r="7"></circle>
+                        <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                    </svg>
+                    <span class="text-2xl md:text-4xl lg:text-5xl font-semibold">
+                        <MiscCounter :max="220" />
+                    </span>
+                    <span class="text-xl font-semibold">Events Completed</span>
                 </div>
             </div>
-            <div><span class="font-bold text-xl md:text-3xl lg:text-4xl text-[#206038]">Customer Testimonials</span>
-                <MiscCarosuel class="mt-5" :images="reviews"></MiscCarosuel>
-            </div>
+        </div>
+        <div><span class="font-bold text-xl md:text-3xl lg:text-4xl text-[#206038]">Customer Testimonials</span>
+            <MiscCarosuel class="mt-5" :images="reviews"></MiscCarosuel>
         </div>
     </div>
 </template>
+
 <script setup lang="ts">
 const foods = [
     { name: "Dosa", image: "/dosa.jpg" },
@@ -115,7 +122,7 @@ const menu = [
     { name: "Idly", image: "/idli.jpg" },
     { name: "Idly", image: "/idli.jpg" },
     { name: "Parotta", image: "/parotta.jpg" },
- 
+
 ]
 
 const reviews = [
