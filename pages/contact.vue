@@ -2,7 +2,7 @@
     <div class="relative w-full h-[50vh] flex flex-col justify-center">
         <img src="/header.webp" class="w-full h-[50vh] object-cover  absolute z-10 top-0">
     </div>
-    <div class="mt-8 grid grid-cols-1 md:grid-cols-3  items-center rounded-2xl max-w-7xl mx-auto gap-8">
+    <div class="mt-8 grid grid-cols-1 md:grid-cols-3  items-center rounded-2xl max-w-7xl xl:max-w-[90 rem] mx-auto gap-8">
         <MiscQr v-for="food in foods" :key="food.name" :name="food.name" :image="food.image" :icon="food.icon" />
         <MiscQr v-for="food in foods" :key="food.name" :name="food.name" :image="food.image" :icon="food.icon" />
         <MiscQr v-for="food in foods" :key="food.name" :name="food.name" :image="food.image" :icon="food.icon" />

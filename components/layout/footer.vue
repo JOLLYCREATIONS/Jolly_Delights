@@ -1,5 +1,5 @@
 <template>
-    <footer class="w-full bg-green-200 p-4">
+    <footer class="w-full bg-[#CBE7D8] p-4">
         <div class="max-w-7xl w-full mx-auto py-4 relative">
             <hr class="w-full border border-black" />
             <div class="flex w-full items-center justify-center">

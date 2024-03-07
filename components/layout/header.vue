@@ -21,12 +21,6 @@
                                 </path>
                             </svg><span>Contact Us</span></a>
                     </nav>
-                    <ul class="flex items-center gap-4">
-                        <div class="flex items-center gap-1 text-black">
-                            <span class="text-xs">தமிழில் பார்க்க</span>
-                            <MiscToggle :turnedOn="false" />
-                        </div>
-                    </ul>
             </div>
         </div>
     </div>
