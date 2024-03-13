@@ -3,20 +3,28 @@
         <div class="relative w-full h-screen flex flex-col justify-start">
             <video src="/promo.mp4" muted autoplay :controls="false" loop
                 class="w-full h-screen object-cover  absolute z-10"></video>
-            <div class="w-full h-screen inset-0 bg-black/40 z-20 absolute" />
-            <div
-                class="relative z-20 max-w-7xl xl:max-w-[90 rem] text-4xl lg:text-6xl text-white px-4 top-16 left-8 font-bold">
+            <div class="relative z-20 p-2 text-4xl lg:text-6xl text-white px-4 top-16 left-8 font-bold">
                 Want to taste something
                 Delicious?
             </div>
-            <div class="relative z-20 max-w-7xl xl:max-w-[90 rem] text-xl lg:text-3xl text-white px-4 top-16 left-8">
+            <div class="relative z-20 p-2 text-xl lg:text-3xl text-white px-4 top-16 left-8">
                 Here is the solution for all your
                 party orders.
             </div>
+            <div class="absolute z-20 w-full bottom-24 flex items-center justify-center gap-8 ">
+                <button
+                    class="p-6 uppercase bg-[#CBE7D8] transition ease-in-out hover:bg-yellow-600 text-black font-black text-sm rounded-md flex items-center gap-2">
+                    <span>View more</span>
+                </button>
+                <button
+                    class="p-6 uppercase bg-[#CBE7D8] transition ease-in-out hover:bg-yellow-600 text-black font-black text-sm rounded-md flex items-center gap-2">
+                    <span>Call Us</span>
+                </button>
+            </div>
         </div>
-        <div class="max-w-7xl xl:max-w-[90 rem] mx-auto flex flex-col gap-12">
-            <div class="p-4 rounded-3xl bg-[#CBE7D8] text-black text-2xl ">
-                <div class="p-4 w-full flex items-center gap-4">
+        <div class="p-4 lg:p-8 w-full mx-auto flex flex-col gap-12">
+            <div class="p-2 rounded-3xl bg-[#CBE7D8] text-black text-2xl ">
+                <div class="p-2 w-full flex items-center gap-4">
                     <span
                         class="text-black font-bold text-xl md:text-3xl lg:text-4xl text-center underline mx-auto">Popular
                         Items</span>
@@ -35,12 +43,12 @@
                 </button>
             </div>
             <div><span class="font-bold text-xl md:text-3xl lg:text-4xl text-[#206038]">Try Our New Arrivals</span>
-                <div class="grid grid-cols-1 lg:grid-cols-6 items-center mt-5 gap-8">
-                    <MiscBox v-for="food in foods" :key="food.name" :name="food.name" :image="food.image" />
-                    <MiscBox v-for="food in foods" :key="food.name" :name="food.name" :image="food.image" />
+                <div class="grid grid-cols-1 md:grid-cols-5 lg:grid-cols-10 items-center mt-5 gap-8">
+                    <MiscBox v-for="food in foods.concat(foods.concat(foods.concat(foods.concat())))" :key="food.name"
+                        :name="food.name" :image="food.image" />
                 </div>
             </div>
-            <div class="p-4 rounded-3xl bg-[#CBE7D8] text-black text-2xl ">
+            <div class="p-2 rounded-3xl bg-[#CBE7D8] text-black text-2xl ">
                 <div class="p-4 w-full flex items-center gap-4">
                     <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"
@@ -50,14 +58,14 @@
                     </svg><span class="text-black font-bold text-xl md:text-3xl lg:text-4xl">Search By Category</span>
                 </div>
 
-                <div class="grid grid-cols-1 lg:grid-cols-8  md:grid-cols-4 items-center mt-5  gap-8">
-                    <MiscCircle v-for="food in menu" :key="food.name" :name="food.name" :image="food.image" />
-                    <MiscCircle v-for="food in menu" :key="food.name" :name="food.name" :image="food.image" />
+                <div class="grid grid-cols-1 lg:grid-cols-10  md:grid-cols-5 items-center mt-5  gap-8">
+                    <a v-for="food in menu.concat(menu.concat(menu.concat(menu.concat())))" :key="food.name" :href="food.link"><MiscCircle 
+                        :name="food.name" :image="food.image" /></a>
                 </div>
             </div>
 
         </div>
-        <div class="mt-8 bg-[#CBE7D8] w-full mt-12 p-4">
+        <div class="mt-8 bg-[#206038] text-white w-full mt-12 p-4">
             <div class="lg:flex items-center gap-2 justify-between w-full">
                 <div class="flex flex-col items-center gap-2 mx-auto">
 
@@ -73,6 +81,32 @@
                         <MiscCounter :max="987" />
                     </span>
                     <span class="text-xl font-semibold">Happy Customers</span>
+                </div>
+                <div class="flex flex-col items-center gap-2 mx-auto">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-edit">
+                        <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
+                        <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
+                    </svg>
+                    <span class="text-2xl md:text-4xl lg:text-5xl font-semibold">
+                        <MiscCounter :max="480" />
+                    </span>
+                    <span class="text-xl font-semibold">Customer Reviews</span>
+                </div>
+                <div class="flex flex-col items-center gap-2 mx-auto">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-edit">
+                        <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
+                        <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
+                    </svg>
+                    <span class="text-2xl md:text-4xl lg:text-5xl font-semibold">
+                        <MiscCounter :max="480" />
+                    </span>
+                    <span class="text-xl font-semibold">Customer Reviews</span>
                 </div>
                 <div class="flex flex-col items-center gap-2 mx-auto">
 
@@ -110,18 +144,20 @@
 
 <script setup lang="ts">
 const foods = [
-    { name: "Dosa", image: "/dosa.jpg" },
-    { name: "Idly", image: "/idli.jpg" },
-    { name: "Idly", image: "/idli.jpg" },
-    { name: "Parotta", image: "/parotta.jpg" },
-    { name: "Parotta", image: "/parotta.jpg" },
-    { name: "Idly", image: "/idli.jpg" },
+    { name: "Dosa", image: "/dosa.jpg"},
+    { name: "Idly", image: "/idli.jpg"},
+    { name: "Idly", image: "/idli.jpg"},
+    { name: "Parotta", image: "/parotta.jpg"},
+    { name: "Parotta", image: "/parotta.jpg"},
+
+
 ]
 const menu = [
-    { name: "Dosa", image: "/dosa.jpg" },
-    { name: "Idly", image: "/idli.jpg" },
-    { name: "Idly", image: "/idli.jpg" },
-    { name: "Parotta", image: "/parotta.jpg" },
+    { name: "Payasam", image: "/payasam/elaneer_payasam.jpg" ,link:"/payasam"},
+    { name: "Idly", image: "/idli.jpg" ,link:"/idly"},
+    { name: "Idly", image: "/idli.jpg" ,link:"/"} ,
+    { name: "Parotta", image: "/parotta.jpg",link:"/"} ,
+    { name: "Idly", image: "/idli.jpg",link:"/"},
 
 ]
 
