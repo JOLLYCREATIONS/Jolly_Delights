@@ -1,6 +1,6 @@
 <template>
     <div :class="`p-2 flex flex-col items-stretch`">
-        <div class="p-2 rounded-xl items-center flex justify-between bg-[#C8E8D8]">
+        <div class="p-2 rounded-xl items-center flex justify-between bg-green-200">
             <div class="flex items-center gap-8">
                 <div class="flex flex-col items-start gap-2">
 
