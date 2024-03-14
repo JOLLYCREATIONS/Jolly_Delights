@@ -9,31 +9,31 @@
             <MiscAccordian title="Breakfast Menu">
                 <div class="grid grid-cols-1 lg:grid-cols-6 items-center mt-5 gap-8">
 
-                    <MiscBox v-for="food in foods" :key="food.name" :name="food.name" :image="food.image" />
+                    <MiscBox v-for="food in foods" :key="food.name" :name="food.name" :image="food.image" @added="()=>addToCart(food)" />
                 </div>
             </MiscAccordian>
             <MiscAccordian title="Lunch Menu">
                 <div class="grid grid-cols-1 lg:grid-cols-6 items-center mt-5 gap-8">
 
-                    <MiscBox v-for="food in foods" :key="food.name" :name="food.name" :image="food.image" />
+                    <MiscBox v-for="food in foods" :key="food.name" :name="food.name" :image="food.image" @added="()=>addToCart(food)" />
                 </div>
             </MiscAccordian>
             <MiscAccordian title="Dinner Menu">
                 <div class="grid grid-cols-1 lg:grid-cols-6 items-center mt-5 gap-8">
 
-                    <MiscBox v-for="food in foods" :key="food.name" :name="food.name" :image="food.image" />
+                    <MiscBox v-for="food in foods" :key="food.name" :name="food.name" :image="food.image" @added="()=>addToCart(food)"/>
                 </div>
             </MiscAccordian>
             <MiscAccordian title="Dessert Menu">
                 <div class="grid grid-cols-1 lg:grid-cols-6 items-center mt-5 gap-8">
 
-                    <MiscBox v-for="food in foods" :key="food.name" :name="food.name" :image="food.image" />
+                    <MiscBox v-for="food in foods" :key="food.name" :name="food.name" :image="food.image" @added="()=>addToCart(food)"/>
                 </div>
             </MiscAccordian>
             <MiscAccordian title="Snacks Menu">
                 <div class="grid grid-cols-1 lg:grid-cols-6 items-center mt-5 gap-8">
 
-                    <MiscBox v-for="food in foods" :key="food.name" :name="food.name" :image="food.image" />
+                    <MiscBox v-for="food in foods" :key="food.name" :name="food.name" :image="food.image" @added="()=>addToCart(food)" />
                 </div>
             </MiscAccordian>
         </div>
@@ -53,9 +53,24 @@
                     </select>
                 </form>
             </div>
-            <div class="p-4 bg-[#206038] text-white text-xl mt-4">
-                <div class="text-white text-xl mt-4">Order Review</div>
+            <div class="p-4 bg-[#206038]  text-white text-xl mt-4">
+                <div class="text-white text-xl ">Order Review</div>
+                <div class="flex flex-col gap-4 mt-4 items-stretch">
+                    <div v-for="cartItem,i in cart" :key="i" >
+                        <div class="bg-white text-black rounded-md flex items-center p-2 gap 2 justify-between"><span>{{ cartItem.name }}</span>
+                            <button @click="()=>removeFromCart(i)" >x</button></div></div>
+                </div>
+                <button class="bg-[#CBE7D8] gap 4 mt-4 px-4 py-2 mx-auto block rounded-md text-black" @click="()=> cart=[]">Reset</button>
+            </div>
+            <div class="bg-[#C8E8D8] mt-4 p-4 flex flex-col text-semibold text-xl gap-6 ">
+                <form class="grid grid-cols-2 gap-4">
+                    <label for="name">Name</label>
+                    <input class="p-2" id="name" type="name" name="name" />
 
+                    <label for="phone">Phone Number </label>
+                    <input class="p-2" id="count" type="text" name="phone" />
+                    <button class="bg-yellow-600 gap 4 mt-4 px-4 py-2 mx-auto block rounded-md text-black">Submit</button>
+                </form>
             </div>
         </div>
     </div>
@@ -69,4 +84,15 @@ const foods = [
     { name: "Parotta", image: "/parotta.jpg" },
     { name: "Idly", image: "/idli.jpg" },
 ]
+
+const cart= ref([])
+
+function addToCart(item:{name:string}) {
+    cart.value.push(item)
+
+}
+function removeFromCart(item:number) {
+    cart.value.splice(item,1)
+
+}
 </script>
