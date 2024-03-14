@@ -29,7 +29,7 @@
                         class="text-black font-bold text-xl md:text-3xl lg:text-4xl text-center underline mx-auto">Popular
                         Items</span>
                 </div>
-                <MiscCards :items="menu.concat(menu)" />
+                <MiscCards :items="foods.concat(foods.concat(foods))" />
                 <button
                     class="p-2 uppercase bg-yellow-600 text-black font-black text-xs rounded-lg flex items-center gap-2 mx-auto">
 

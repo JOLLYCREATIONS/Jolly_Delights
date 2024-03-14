@@ -32,6 +32,10 @@
                 </div>
             </button>
         </div>
+        <div class="flex items-center gap-2">
+            <button v-for="item, i in images.slice(0, images.length - 2)" :key="item" :class="`w-8 h-8 rounded-full ${current === i ? `bg-yellow-600` : `bg-green-900`}`" @click="() => current = i"></button>
+        </div>
+
     </div>
 </template>
 <script setup>
