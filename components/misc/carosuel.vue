@@ -33,7 +33,7 @@
             </button>
         </div>
         <div class="flex items-center gap-2">
-            <button v-for="item, i in images.slice(0, images.length - 2)" :key="item" :class="`w-8 h-8 rounded-full ${current === i ? `bg-yellow-600` : `bg-green-900`}`" @click="() => current = i"></button>
+            <button v-for="item, i in images" :key="item" :class="`w-8 h-8 rounded-full ${Math.abs(current - i)<=1 ? `bg-yellow-600` : `bg-green-900`}`" @click="() => current = i"></button>
         </div>
 
     </div>
@@ -56,15 +56,14 @@ const img = computed(() => {
 });
 let interval;
 onMounted(() => {
-    interval = setInterval(() => {
-        current.value === images.length - 3 ? (current.value = 0) : next();
+    interval = setInterval(() => { next();
     }, 6000);
 });
 
 onBeforeUnmount(() => clearInterval(interval));
 
 const next = () =>
-    current.value === images.length - 3
+    current.value >= images.length - 3
         ? (current.value = 0)
         : current.value++;
 const prev = () =>

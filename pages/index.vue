@@ -137,7 +137,7 @@
             </div>
         </div>
         <div><span class="font-bold text-xl md:text-3xl lg:text-4xl text-[#206038]">Customer Testimonials</span>
-            <MiscCarosuel class="mt-5" :images="reviews"></MiscCarosuel>
+            <MiscCarosuel class="mt-5" :images="reviews.concat(reviews)"></MiscCarosuel>
         </div>
     </div>
 </template>
