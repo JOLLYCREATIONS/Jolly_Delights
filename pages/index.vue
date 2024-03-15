@@ -3,11 +3,11 @@
         <div class="relative w-full h-screen flex flex-col justify-start">
             <video src="/promo.mp4" muted autoplay :controls="false" loop
                 class="w-full h-screen object-cover  absolute z-10"></video>
-            <div class="relative z-20 p-2 text-4xl lg:text-6xl text-white px-4 top-16 left-8 font-bold">
+            <div class="relative z-20 p-2 text-4xl lg:text-6xl text-white px-4 top-16 ml-8 font-bold">
                 Want to taste something
                 Delicious?
             </div>
-            <div class="relative z-20 p-2 text-xl lg:text-3xl text-white px-4 top-16 left-8">
+            <div class="relative z-20 p-2 text-xl lg:text-3xl text-white px-4 top-16 ml-8">
                 Here is the solution for all your
                 party orders.
             </div>
@@ -43,7 +43,7 @@
                 </button>
             </div>
             <div><span class="font-bold text-xl md:text-3xl lg:text-4xl text-[#206038]">Try Our New Arrivals</span>
-                <div class="grid grid-cols-1 md:grid-cols-5 lg:grid-cols-10 items-center mt-5 gap-8">
+                <div class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-7 items-center mt-5 gap-8">
                     <MiscBox v-for="food in foods.concat(foods.concat(foods.concat(foods.concat())))" :key="food.name"
                         :name="food.name" :image="food.image" />
                 </div>
