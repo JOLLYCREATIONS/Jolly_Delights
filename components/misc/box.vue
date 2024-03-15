@@ -5,7 +5,7 @@
     </div>
         <div class="md:text-lg lg:text-base truncate font-semibold ">{{ name }}</div>
         <button
-            class="bg-green-800 transition ease-in-out hover:bg-yellow-600 block mt-2 p-2 w-full mx-auto rounded-md text-white text-xs sm:text-sm md:text-base"
+            class="bg-green-800 transition ease-in-out hover:bg-[#ffcf03] block mt-2 p-2 w-full mx-auto rounded-md text-white text-xs sm:text-sm md:text-base"
             @click="() => emit(`added`)">Add To Cart</button>
     </div>
 </template>

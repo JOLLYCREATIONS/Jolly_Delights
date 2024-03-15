@@ -46,12 +46,12 @@
             <div class="bg-[#C8E8D8] mt-4 p-4 flex flex-col text-semibold text-xl gap-6 ">
                 <form class="grid grid-cols-2 gap-4">
                     <label for="date">Event Date </label>
-                    <input class="p-2" id="date" type="Date" name="Event Date" required />
+                    <input class="p-2 rounded-md" id="date" type="Date" name="Event Date" required />
 
                     <label for="count">Head count </label>
-                    <input class="p-2" id="count" type="text" name="Headcount" required />
+                    <input class="p-2 rounded-md" id="count" type="text" name="Headcount" required />
                     <label for="type">Event Type </label>
-                    <select class="p-2" name="type" id="type">
+                    <select class="p-2 rounded-md bg-white" name="type" id="type">
                         <option value="Wedding">Wedding</option>
                         <option value="Birthday">Birthday</option>
                         <option value="Grahapravesam">Grahapravesam</option>
@@ -74,12 +74,12 @@
             <div class="bg-[#C8E8D8] mt-4 p-4 flex flex-col text-semibold text-xl gap-6 ">
                 <form class="grid grid-cols-2 gap-4">
                     <label for="name">Name</label>
-                    <input class="p-2" id="name" type="text" minlength="3" name="name" required />
+                    <input class="p-2 rounded-md" id="name" type="text" minlength="3" name="name" required />
 
                     <label for="phone">Phone Number </label>
-                    <input class="p-2" id="count" type="tel" name="phone" pattern="[0-9]{10}" required />
+                    <input class="p-2 rounded-md" id="count" type="tel" name="phone" pattern="[0-9]{10}" required />
                     <button type="submit"
-                        class="bg-yellow-600 gap 4 mt-4 px-4 py-2 mx-auto block rounded-md text-black">Submit</button>
+                        class="bg-[#ffcf03] gap 4 mt-4 px-4 py-2 mx-auto block rounded-md text-black">Submit</button>
                 </form>
             </div>
         </div>

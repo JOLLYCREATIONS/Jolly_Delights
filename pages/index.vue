@@ -13,11 +13,11 @@
             </div>
             <div class="absolute z-20 w-full bottom-24 flex items-center justify-center gap-8 ">
                 <button
-                    class="p-6 uppercase bg-[#CBE7D8] transition ease-in-out hover:bg-yellow-600 text-black font-black text-sm rounded-md flex items-center gap-2">
+                    class="p-6 uppercase bg-[#CBE7D8] transition ease-in-out hover:bg-[#ffcf03] text-black font-black text-sm rounded-md flex items-center gap-2">
                     <span>View more</span>
                 </button>
                 <button
-                    class="p-6 uppercase bg-[#CBE7D8] transition ease-in-out hover:bg-yellow-600 text-black font-black text-sm rounded-md flex items-center gap-2">
+                    class="p-6 uppercase bg-[#CBE7D8] transition ease-in-out hover:bg-[#ffcf03] text-black font-black text-sm rounded-md flex items-center gap-2">
                     <span>Call Us</span>
                 </button>
             </div>
@@ -31,7 +31,7 @@
                 </div>
                 <MiscCards :items="foods.concat(foods.concat(foods))" />
                 <button
-                    class="p-2 uppercase bg-yellow-600 text-black font-black text-xs rounded-lg flex items-center gap-2 mx-auto">
+                    class="p-2 uppercase bg-[#ffcf03] text-black font-black text-xs rounded-lg flex items-center gap-2 mx-auto">
 
                     <span>Order Now</span>
 
@@ -44,7 +44,7 @@
             </div>
             <div><span class="font-bold text-xl md:text-3xl lg:text-4xl text-[#206038]">Try Our New Arrivals</span>
                 <div class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-7 items-center mt-5 gap-8">
-                    <MiscBox v-for="food in foods.concat(foods.concat(foods.concat(foods.concat())))" :key="food.name"
+                    <MiscBox v-for="food in foods.concat(foods)" :key="food.name"
                         :name="food.name" :image="food.image" />
                 </div>
             </div>
@@ -147,6 +147,9 @@ const foods = [
     { name: "Idly", image: "/idli.jpg"},
     { name: "Parotta", image: "/parotta.jpg"},
     { name: "Parotta", image: "/parotta.jpg"},
+    { name: "Idly", image: "/idli.jpg"},
+    { name: "Parotta", image: "/parotta.jpg"},
+
 
 
 ]

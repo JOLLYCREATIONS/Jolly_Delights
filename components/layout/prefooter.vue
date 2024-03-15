@@ -4,7 +4,7 @@
             <div class="text-2xl md:text-4xl lg:text-5xl font-black text-center max-w-xl">
                 Are you ready to order with the best deals?
             </div>
-            <button class="p-2 uppercase bg-yellow-600 text-black font-black text-xs rounded-lg flex items-center gap-2">
+            <button class="p-2 uppercase bg-[#ffcf03] text-black font-black text-xs rounded-lg flex items-center gap-2">
 
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
