@@ -9,31 +9,36 @@
             <MiscAccordian title="Breakfast Menu">
                 <div class="grid grid-cols-1 lg:grid-cols-6 items-center mt-5 gap-8">
 
-                    <MiscBox v-for="food in foods" :key="food.name" :name="food.name" :image="food.image" @added="()=>addToCart(food)" />
+                    <MiscBox v-for="food in foods" :key="food.name" :name="food.name" :image="food.image"
+                        @added="() => addToCart(food)" />
                 </div>
             </MiscAccordian>
             <MiscAccordian title="Lunch Menu">
                 <div class="grid grid-cols-1 lg:grid-cols-6 items-center mt-5 gap-8">
 
-                    <MiscBox v-for="food in foods" :key="food.name" :name="food.name" :image="food.image" @added="()=>addToCart(food)" />
+                    <MiscBox v-for="food in foods" :key="food.name" :name="food.name" :image="food.image"
+                        @added="() => addToCart(food)" />
                 </div>
             </MiscAccordian>
             <MiscAccordian title="Dinner Menu">
                 <div class="grid grid-cols-1 lg:grid-cols-6 items-center mt-5 gap-8">
 
-                    <MiscBox v-for="food in foods" :key="food.name" :name="food.name" :image="food.image" @added="()=>addToCart(food)"/>
+                    <MiscBox v-for="food in foods" :key="food.name" :name="food.name" :image="food.image"
+                        @added="() => addToCart(food)" />
                 </div>
             </MiscAccordian>
             <MiscAccordian title="Dessert Menu">
                 <div class="grid grid-cols-1 lg:grid-cols-6 items-center mt-5 gap-8">
 
-                    <MiscBox v-for="food in foods" :key="food.name" :name="food.name" :image="food.image" @added="()=>addToCart(food)"/>
+                    <MiscBox v-for="food in foods" :key="food.name" :name="food.name" :image="food.image"
+                        @added="() => addToCart(food)" />
                 </div>
             </MiscAccordian>
             <MiscAccordian title="Snacks Menu">
                 <div class="grid grid-cols-1 lg:grid-cols-6 items-center mt-5 gap-8">
 
-                    <MiscBox v-for="food in foods" :key="food.name" :name="food.name" :image="food.image" @added="()=>addToCart(food)" />
+                    <MiscBox v-for="food in foods" :key="food.name" :name="food.name" :image="food.image"
+                        @added="() => addToCart(food)" />
                 </div>
             </MiscAccordian>
         </div>
@@ -41,10 +46,10 @@
             <div class="bg-[#C8E8D8] mt-4 p-4 flex flex-col text-semibold text-xl gap-6 ">
                 <form class="grid grid-cols-2 gap-4">
                     <label for="date">Event Date </label>
-                    <input class="p-2" id="date" type="Date" name="Event Date" />
+                    <input class="p-2" id="date" type="Date" name="Event Date" required />
 
                     <label for="count">Head count </label>
-                    <input class="p-2" id="count" type="text" name="Headcount" />
+                    <input class="p-2" id="count" type="text" name="Headcount" required />
                     <label for="type">Event Type </label>
                     <select class="p-2" name="type" id="type">
                         <option value="Wedding">Wedding</option>
@@ -56,20 +61,25 @@
             <div class="p-4 bg-[#206038]  text-white text-xl mt-4">
                 <div class="text-white text-xl ">Order Review</div>
                 <div class="flex flex-col gap-4 mt-4 items-stretch">
-                    <div v-for="cartItem,i in cart" :key="i" >
-                        <div class="bg-white text-black rounded-md flex items-center p-2 gap 2 justify-between"><span>{{ cartItem.name }}</span>
-                            <button @click="()=>removeFromCart(i)" >x</button></div></div>
+                    <div v-for="cartItem, i in cart" :key="i">
+                        <div class="bg-white text-black rounded-md flex items-center p-2 gap 2 justify-between"><span>{{
+                        cartItem.name }}</span>
+                            <button @click="() => removeFromCart(i)">x</button>
+                        </div>
+                    </div>
                 </div>
-                <button class="bg-[#CBE7D8] gap 4 mt-4 px-4 py-2 mx-auto block rounded-md text-black" @click="()=> cart=[]">Reset</button>
+                <button class="bg-[#CBE7D8] gap 4 mt-4 px-4 py-2 mx-auto block rounded-md text-black"
+                    @click="()=> cart=[]">Reset</button>
             </div>
             <div class="bg-[#C8E8D8] mt-4 p-4 flex flex-col text-semibold text-xl gap-6 ">
                 <form class="grid grid-cols-2 gap-4">
                     <label for="name">Name</label>
-                    <input class="p-2" id="name" type="name" name="name" />
+                    <input class="p-2" id="name" type="text" minlength="3" name="name" required />
 
                     <label for="phone">Phone Number </label>
-                    <input class="p-2" id="count" type="text" name="phone" />
-                    <button class="bg-yellow-600 gap 4 mt-4 px-4 py-2 mx-auto block rounded-md text-black">Submit</button>
+                    <input class="p-2" id="count" type="tel" name="phone" pattern="[0-9]{10}" required />
+                    <button type="submit"
+                        class="bg-yellow-600 gap 4 mt-4 px-4 py-2 mx-auto block rounded-md text-black">Submit</button>
                 </form>
             </div>
         </div>
@@ -85,14 +95,14 @@ const foods = [
     { name: "Idly", image: "/idli.jpg" },
 ]
 
-const cart= ref([])
+const cart = ref<{ name: string }[]>([])
 
-function addToCart(item:{name:string}) {
+function addToCart(item: { name: string }) {
     cart.value.push(item)
 
 }
-function removeFromCart(item:number) {
-    cart.value.splice(item,1)
+function removeFromCart(item: number) {
+    cart.value.splice(item, 1)
 
 }
 </script>
