@@ -43,13 +43,13 @@
             </MiscAccordian>
         </div>
         <div>
-            <div class="bg-[#C8E8D8] mt-4 p-4 flex flex-col text-semibold text-xl gap-6 ">
+            <div class="bg-[#C8E8D8] mt-4 p-4 flex flex-col rounded-md text-semibold text-xl gap-6 ">
                 <form class="grid grid-cols-2 gap-4">
                     <label for="date">Event Date </label>
                     <input class="p-2 rounded-md" id="date" type="Date" name="Event Date" required />
 
                     <label for="count">Head count </label>
-                    <input class="p-2 rounded-md" id="count" type="text" name="Headcount" required />
+                    <input class="p-2 rounded-md" placeholder="Headcount"type="number" id="quantity" name="quantity" min="1" max="1000" required />
                     <label for="type">Event Type </label>
                     <select class="p-2 rounded-md bg-white" name="type" id="type">
                         <option value="Wedding">Wedding</option>
@@ -58,7 +58,7 @@
                     </select>
                 </form>
             </div>
-            <div class="p-4 bg-[#206038]  text-white text-xl mt-4">
+            <div class="p-4 bg-[#206038] rounded-md text-white text-xl mt-4">
                 <div class="text-white text-xl ">Order Review</div>
                 <div class="flex flex-col gap-4 mt-4 items-stretch">
                     <div v-for="cartItem, i in cart" :key="i">
@@ -68,18 +68,18 @@
                         </div>
                     </div>
                 </div>
-                <button class="bg-[#CBE7D8] gap 4 mt-4 px-4 py-2 mx-auto block rounded-md text-black"
+                <button class="bg-[#CBE7D8] transition ease-in-out hover:bg-[#ffcf03] hover:text-white gap 4 mt-4 px-4 py-2 mx-auto block rounded-md text-black"
                     @click="()=> cart=[]">Reset</button>
             </div>
-            <div class="bg-[#C8E8D8] mt-4 p-4 flex flex-col text-semibold text-xl gap-6 ">
+            <div class="bg-[#C8E8D8] mt-4 p-4 flex flex-col text-semibold text-xl rounded-md gap-6 ">
                 <form class="grid grid-cols-2 gap-4">
                     <label for="name">Name</label>
-                    <input class="p-2 rounded-md" id="name" type="text" minlength="3" name="name" required />
+                    <input class="p-2 rounded-md" id="name" placeholder="Enter your name" type="text" minlength="3" name="name" required />
 
                     <label for="phone">Phone Number </label>
-                    <input class="p-2 rounded-md" id="count" type="tel" name="phone" pattern="[0-9]{10}" required />
+                    <input class="p-2 rounded-md" id="count" type="tel" name="phone" placeholder="Enter your ph no." pattern="[0-9]{10}" required />
                     <button type="submit"
-                        class="bg-[#ffcf03] gap 4 mt-4 px-4 py-2 mx-auto block rounded-md text-black">Submit</button>
+                        class="bg-[#ffcf03] transition ease-in-out hover:bg-green-800 hover:text-white gap 4 mt-4 px-4 py-2 mx-auto block rounded-md text-black">Submit</button>
                 </form>
             </div>
         </div>

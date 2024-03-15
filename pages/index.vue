@@ -31,7 +31,7 @@
                 </div>
                 <MiscCards :items="foods.concat(foods.concat(foods))" />
                 <button
-                    class="p-2 uppercase bg-[#ffcf03] text-black font-black text-xs rounded-lg flex items-center gap-2 mx-auto">
+                    class="p-2 uppercase bg-[#ffcf03] transition ease-in-out hover:bg-green-800 hover:text-white text-black font-black text-xs rounded-lg flex items-center gap-2 mx-auto">
 
                     <span>Order Now</span>
 
