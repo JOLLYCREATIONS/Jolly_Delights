@@ -1,7 +1,7 @@
 <template>
     <div class="w-full bg-green-800 text-white bg-cover bg-fixed bg-center" style="background-image:url(/header.webp)">
         <div class="lg:flex items-center justify-center gap-12 w-full bg-black/40 py-8">
-            <div class="text-2xl md:text-4xl lg:text-5xl font-black text-center max-w-xl">
+            <div class="text-2xl md:text-4xl lg:text-4xl font-black text-center max-w-xl">
                 Are you ready to order with the best deals?
             </div>
             <button class="p-2 uppercase bg-[#ffcf03] transition ease-in-out hover:bg-green-800 hover:text-white text-black font-black text-xs rounded-lg flex items-center gap-2">

@@ -1,5 +1,5 @@
 <template>
-    <div class="flex flex-col w-full items-center space-y-12">
+    <div class="flex flex-col relative -top-[1.5rem] w-full items-center space-y-12">
         <div class="relative w-full h-screen flex flex-col justify-start">
             <video src="/promo.mp4" muted autoplay :controls="false" loop
                 class="w-full h-screen object-cover  absolute z-10"></video>
@@ -13,11 +13,11 @@
             </div>
             <div class="absolute z-20 w-full bottom-24 flex items-center justify-center gap-8 ">
                 <button
-                    class="p-6 uppercase bg-[#CBE7D8] transition ease-in-out hover:bg-[#ffcf03] text-black font-black text-sm rounded-md flex items-center gap-2">
+                    class="p-6 uppercase bg-[#CBE7D8] transition ease-in-out hover:bg-[#ffcf03] border-green-800 border-4 text-black font-black text-sm rounded-md flex items-center gap-2">
                     <span>View more</span>
                 </button>
                 <button
-                    class="p-6 uppercase bg-[#CBE7D8] transition ease-in-out hover:bg-[#ffcf03] text-black font-black text-sm rounded-md flex items-center gap-2">
+                    class="p-6 uppercase bg-[#CBE7D8] transition ease-in-out hover:bg-[#ffcf03]  text-black font-black text-sm rounded-md flex items-center gap-2">
                     <span>Call Us</span>
                 </button>
             </div>

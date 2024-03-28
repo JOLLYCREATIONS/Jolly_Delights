@@ -13,7 +13,7 @@
         </div>
         <div class="flex items-center gap-2">
             <button v-for="item, i in images.slice(0, images.length - 2)" :key="item"
-                :class="`w-8 h-8 rounded-full ${Math.abs(current - (i)) <= 1 ? `bg-yellow-600` : `bg-green-900`}`"
+                :class="`w-8 h-8 rounded-full ${Math.abs(current - (i)) <= 1 ? `bg-[#ffcf03]` : `bg-green-900`}`"
                 @click="() => current = i"></button>
         </div>
 
