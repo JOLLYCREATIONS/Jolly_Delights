@@ -17,7 +17,7 @@
                     <span>View more</span>
                 </button>
                 <button
-                    class="p-6 uppercase bg-[#CBE7D8] transition ease-in-out hover:bg-[#ffcf03]  text-black font-black text-sm rounded-md flex items-center gap-2">
+                    class="p-6 uppercase bg-[#CBE7D8] transition ease-in-out hover:bg-[#ffcf03] border-green-800 border-4 text-black font-black text-sm rounded-md flex items-center gap-2">
                     <span>Call Us</span>
                 </button>
             </div>
@@ -43,7 +43,7 @@
                 </button>
             </div>
             <div><span class="font-bold text-xl md:text-3xl lg:text-4xl text-[#206038]">Try Our New Arrivals</span>
-                <div class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-7 items-center mt-5 gap-8">
+                <div class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-7 items-center mt-5 gap-6">
                     <MiscBox v-for="food in foods.concat(foods)" :key="food.name"
                         :name="food.name" :image="food.image" />
                 </div>
