@@ -31,7 +31,7 @@
                 </div>
                 <MiscCards :items="foods.concat(foods.concat(foods))" />
                 <button
-                    class="p-2 uppercase bg-[#ffcf03] transition ease-in-out hover:bg-green-800 hover:text-white text-black font-black text-xs rounded-lg flex items-center gap-2 mx-auto">
+                    class="p-2 uppercase bg-[#ffcf03] transition ease-in-out hover:bg-green-800 hover:text-white text-black font-black text-sm mb-8 rounded-lg flex items-center gap-2 mx-auto">
 
                     <span>Order Now</span>
 
@@ -69,7 +69,7 @@
             <div class="lg:flex items-center gap-2 justify-between w-full">
                 <div class="flex flex-col items-center gap-2 mx-auto">
 
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                         class="feather feather-users">
                         <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
@@ -84,7 +84,7 @@
                 </div>
                 <div class="flex flex-col items-center gap-2 mx-auto">
 
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                         class="feather feather-edit">
                         <circle cx="12" cy="12" r="10"></circle><path d="M8 14s1.5 2 4 2 4-2 4-2"></path><line x1="9" y1="9" x2="9.01" y2="9"></line><line x1="15" y1="9" x2="15.01" y2="9"></line>
@@ -96,7 +96,7 @@
                 </div>
                 <div class="flex flex-col items-center gap-2 mx-auto">
 
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                         class="feather feather-edit">
                         <circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
@@ -108,7 +108,7 @@
                 </div>
                 <div class="flex flex-col items-center gap-2 mx-auto">
 
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                         class="feather feather-edit">
                         <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
@@ -121,7 +121,7 @@
                 </div>
                 <div class="flex flex-col items-center gap-2 mx-auto">
 
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                         class="feather feather-award">
                         <circle cx="12" cy="8" r="7"></circle>
