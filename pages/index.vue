@@ -3,14 +3,6 @@
         <div class="relative w-full h-screen flex flex-col justify-start">
             <video src="/promo.mp4" muted autoplay :controls="false" loop
                 class="w-full h-screen object-cover  absolute z-10"></video>
-            <div class="relative z-20 p-2 text-4xl lg:text-6xl text-white px-4 top-16 ml-8 font-bold">
-                Want to taste something
-                Delicious?
-            </div>
-            <div class="relative z-20 p-2 text-xl lg:text-3xl text-white px-4 top-16 ml-8">
-                Here is the solution for all your
-                party orders.
-            </div>
             <div class="absolute z-20 w-full bottom-24 flex items-center justify-center gap-8 ">
                 <button
                     class="p-6 uppercase bg-[#CBE7D8] transition ease-in-out hover:bg-[#ffcf03] border-green-800 border-4 text-black font-black text-sm rounded-md flex items-center gap-2">
@@ -44,8 +36,8 @@
             </div>
             <div><span class="font-bold text-xl md:text-3xl lg:text-4xl text-[#206038]">Try Our New Arrivals</span>
                 <div class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-7 items-center mt-5 gap-6">
-                    <MiscBox v-for="food in foods.concat(foods)" :key="food.name"
-                        :name="food.name" :image="food.image" />
+                    <MiscBox v-for="food in trymenu.concat(trymenu)" :key="food.name"
+                        :name="food.name" :image="food.image" :ratings="food.ratings"/>
                 </div>
             </div>
             <div class="p-2 rounded-3xl bg-[#CBE7D8] text-black text-2xl ">
@@ -151,6 +143,17 @@ const foods = [
     { name: "Parotta", image: "/parotta.jpg"},
 
 
+
+]
+
+const trymenu =[
+    { name: "Dosa", image: "/dosa.jpg", ratings:5},
+    { name: "Idly", image: "/idli.jpg",ratings:5},
+    { name: "Idly", image: "/idli.jpg",ratings:5},
+    { name: "Parotta", image: "/parotta.jpg",ratings:5},
+    { name: "Parotta", image: "/parotta.jpg",ratings:5},
+    { name: "Idly", image: "/idli.jpg",ratings:5},
+    { name: "Parotta", image: "/parotta.jpg",ratings:5},
 
 ]
 const menu = [
