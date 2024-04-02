@@ -35,7 +35,7 @@
                 </button>
             </div>
             <div><span class="font-bold text-xl md:text-3xl lg:text-4xl text-[#206038]">Try Our New Arrivals</span>
-                <div class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-7 items-center mt-5 gap-6">
+                <div class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-5 items-center mt-5 gap-6">
                     <MiscBox v-for="food in trymenu.concat(trymenu)" :key="food.name"
                         :name="food.name" :image="food.image" :ratings="food.ratings"/>
                 </div>
