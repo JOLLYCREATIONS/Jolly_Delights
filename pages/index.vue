@@ -50,7 +50,7 @@
                     </svg><span class="text-black font-bold text-xl md:text-3xl lg:text-4xl">Search By Category</span>
                 </div>
 
-                <div class="grid grid-cols-1 lg:grid-cols-10  md:grid-cols-5 items-center mt-5  gap-8">
+                <div class="grid grid-cols-1 lg:grid-cols-10  md:grid-cols-5 items-center mt-5  gap-8 ">
                     <a v-for="food in menu.concat(menu.concat(menu.concat(menu.concat())))" :key="food.name" :href="food.link"><MiscCircle 
                         :name="food.name" :image="food.image" /></a>
                 </div>
