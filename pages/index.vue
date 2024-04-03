@@ -27,9 +27,9 @@
                 </button>
             </div>
         </div>
-        <div class="w-full mx-auto flex flex-col gap-12">
+        <div class="w-full  p-8 flex flex-col gap-12">
             <div class="h-screen flex flex-col justify-center">
-                <div class="p-2 rounded-3xl bg-[#CBE7D8]  text-black text-2xl ">
+                <div class="p-6 rounded-3xl bg-[#CBE7D8]   text-black text-2xl ">
                     <div class="p-2 w-full flex items-center gap-4">
                         <span
                             class="text-black font-bold text-xl md:text-3xl lg:text-4xl text-center underline mx-auto">Popular
@@ -49,16 +49,19 @@
                     </button>
                 </div>
             </div>
-            <div class="min-h-screen flex flex-col max-w-6xl mx-auto justify-center">
-                <div><span class="font-bold text-xl md:text-3xl  lg:text-4xl text-[#206038]">Try Our New Arrivals</span>
-                    <div class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-5 items-center mt-5 gap-2">
-                        <MiscBox v-for="food in trymenu.concat(trymenu)" :key="food.name" :name="food.name"
-                            :image="food.image" :ratings="food.ratings" />
-                    </div>
+        </div>
+
+        <div class="min-h-screen flex flex-col max-w-7xl mx-auto justify-center">
+            <div><span class="font-bold text-xl md:text-3xl  lg:text-4xl text-[#206038]">Try Our New Arrivals</span>
+                <div class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-5 items-center mt-5 gap-4">
+                    <MiscBox v-for="food in trymenu.concat(trymenu)" :key="food.name" :name="food.name"
+                        :image="food.image" :ratings="food.ratings" />
                 </div>
             </div>
-            <div class="h-screen flex flex-col justify-center">
-                <div class="p-2 rounded-3xl bg-[#CBE7D8] text-black text-2xl ">
+        </div>
+        <div class="min-h-screen w-full p-4 flex flex-col justify-center">
+            <div class="p-4">
+                <div class="rounded-3xl bg-[#CBE7D8] p-2 text-black text-2xl ">
                     <div class="p-4 w-full flex items-center gap-4">
                         <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"
@@ -69,15 +72,18 @@
                             Category</span>
                     </div>
 
-                    <div class="grid grid-cols-1 lg:grid-cols-10  md:grid-cols-5 items-center mt-5  gap-8 ">
-                        <a v-for="food in menu.concat(menu.concat(menu.concat(menu.concat())))" :key="food.name"
+                    <div class="grid grid-cols-1 lg:grid-cols-6  md:grid-cols-5 items-center mt-5  gap-5 ">
+                        <a v-for="food in menu.concat(menu.concat(menu.concat()))" :key="food.name"
                             :href="food.link">
                             <MiscCircle :name="food.name" :image="food.image" />
                         </a>
                     </div>
                 </div>
-            <div class=" bg-[#206038]  text-white w-full mt-12 p-4">
-                <div class="lg:flex items-center gap-2 justify-between w-full">
+            </div>
+        </div>
+        <div class="min-h-screen w-full p-4 flex flex-col justify-center">
+            <div class=" bg-[#206038] text-white w-full mt-12 p-4">
+                <div class="lg:flex items-center gap-2  justify-between w-full">
                     <div class="flex flex-col items-center gap-2 mx-auto">
 
                         <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none"
@@ -152,13 +158,11 @@
                     </div>
                 </div>
             </div>
-            </div>
+        </div>
 
-            <div class="max-w-6xl mx-auto"><span
-                    class="font-bold text-xl md:text-3xl lg:text-4xl text-[#206038]">Customer
-                    Testimonials</span>
-                <MiscCarosuel class="mt-5" :images="reviews.concat(reviews)"></MiscCarosuel>
-            </div>
+        <div class="max-w-6xl mx-auto"><span class="font-bold text-xl md:text-3xl lg:text-4xl text-[#206038]">Customer
+                Testimonials</span>
+            <MiscCarosuel class="mt-5" :images="reviews.concat(reviews)"></MiscCarosuel>
         </div>
     </div>
 
@@ -192,6 +196,7 @@ const menu = [
     { name: "Idly", image: "/idli.jpg", link: "/" },
     { name: "Parotta", image: "/parotta.jpg", link: "/" },
     { name: "Idly", image: "/idli.jpg", link: "/" },
+    { name: "Parotta", image: "/parotta.jpg", link: "/" },
 
 ]
 

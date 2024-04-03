@@ -1,13 +1,13 @@
 <template>
-    <header class="fixed lg:relative top-0 left-0 w-full shadow:xl">
-        <div class="bg-[#CBE7D8] w-full shadow:xl">
-            <div class="flex gap-12 items-center justify-between p-2 max-w-[100rem] mx-auto shadow:xl">
+    <header class="fixed top-0 left-0 w-full shadow-xl">
+        <div class="bg-[#CBE7D8] w-full ">
+            <div class="flex gap-12 items-center justify-between p-2 w-full mx-auto ">
                 <div class="flex items-center gap-4 w-full">
                     <img src="/logo.png" class="w-12 h-12" alt="Jolly" />
                     <div class="uppercase text-2xl  w-full text-[#206038] font-bold">Jolly Delights</div>
                 </div>
-                <div class="flex items-center justify-between gap-8 text-[#206038] grow-1 w-full">
-                    <nav class="flex text-sm items-center gap-12 ">
+                <div class="flex items-center justify-end mr-4 gap-8 text-[#206038] grow-1 w-full">
+                    <nav class="flex text-sm justify-end items-center gap-12 ">
                         <a class="hover:font-bold transition duration-500 ease-in-out transform hover:scale-110 " href="/">Home</a>
                         <a class="hover:font-bold transition duration-500 ease-in-out transform hover:scale-110 " href="/menu">Menu</a>
                         <a class="hover:font-bold transition duration-500 ease-in-out transform hover:scale-110 " href="/">FAQS</a>
