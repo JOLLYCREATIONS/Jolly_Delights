@@ -9,159 +9,189 @@
                     <span>View more</span>
                 </button>
                 <button
-                    class="p-6 uppercase bg-[#CBE7D8] transition ease-in-out hover:bg-[#ffcf03] border-green-800 border-4 text-black font-black text-sm rounded-md flex items-center gap-2">
-                    <span>Call Us</span>
-                </button>
-            </div>
-        </div>
-        <div class="p-4 lg:p-8 w-full mx-auto flex flex-col gap-12">
-            <div class="p-2 rounded-3xl bg-[#CBE7D8] text-black text-2xl ">
-                <div class="p-2 w-full flex items-center gap-4">
-                    <span
-                        class="text-black font-bold text-xl md:text-3xl lg:text-4xl text-center underline mx-auto">Popular
-                        Items</span>
-                </div>
-                <MiscCards :items="foods.concat(foods.concat(foods))" />
-                <button
-                    class="p-2 uppercase bg-[#ffcf03] transition ease-in-out hover:bg-green-800 hover:text-white text-black font-black text-sm mb-8 rounded-lg flex items-center gap-2 mx-auto">
-
-                    <span>Order Now</span>
-
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                    class="p-6 uppercase bg-[#CBE7D8] transition ease-in-out hover:bg-[#ffcf03] border-green-800 border-4 text-black font-black text-sm rounded-full flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="feather feather-chevron-right">
-                        <polyline points="9 18 15 12 9 6"></polyline>
+                        class="feather feather absolute z-10 animate-ping">
+                        <path
+                            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                        </path>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-phone">
+                        <path
+                            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                        </path>
                     </svg>
                 </button>
             </div>
-            <div><span class="font-bold text-xl md:text-3xl lg:text-4xl text-[#206038]">Try Our New Arrivals</span>
-                <div class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-5 items-center mt-5 gap-6">
-                    <MiscBox v-for="food in trymenu.concat(trymenu)" :key="food.name"
-                        :name="food.name" :image="food.image" :ratings="food.ratings"/>
-                </div>
-            </div>
-            <div class="p-2 rounded-3xl bg-[#CBE7D8] text-black text-2xl ">
-                <div class="p-4 w-full flex items-center gap-4">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"
-                        class="feather feather-search">
-                        <circle cx="11" cy="11" r="8"></circle>
-                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-                    </svg><span class="text-black font-bold text-xl md:text-3xl lg:text-4xl">Search By Category</span>
-                </div>
-
-                <div class="grid grid-cols-1 lg:grid-cols-10  md:grid-cols-5 items-center mt-5  gap-8 ">
-                    <a v-for="food in menu.concat(menu.concat(menu.concat(menu.concat())))" :key="food.name" :href="food.link"><MiscCircle 
-                        :name="food.name" :image="food.image" /></a>
-                </div>
-            </div>
-
         </div>
-        <div class="mt-8 bg-[#206038] text-white w-full mt-12 p-4">
-            <div class="lg:flex items-center gap-2 justify-between w-full">
-                <div class="flex flex-col items-center gap-2 mx-auto">
+        <div class="w-full mx-auto flex flex-col gap-12">
+            <div class="h-screen flex flex-col justify-center">
+                <div class="p-2 rounded-3xl bg-[#CBE7D8]  text-black text-2xl ">
+                    <div class="p-2 w-full flex items-center gap-4">
+                        <span
+                            class="text-black font-bold text-xl md:text-3xl lg:text-4xl text-center underline mx-auto">Popular
+                            Items</span>
+                    </div>
+                    <MiscCards :items="foods.concat(foods.concat(foods))" />
+                    <button
+                        class="p-2 uppercase bg-[#ffcf03] transition ease-in-out hover:bg-green-800 hover:text-white text-black font-black text-sm mb-8 rounded-lg flex items-center gap-2 mx-auto">
 
-                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="feather feather-users">
-                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                        <circle cx="9" cy="7" r="4"></circle>
-                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-                        <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-                    </svg>
-                    <span class="text-2xl md:text-4xl lg:text-5xl font-semibold">
-                        <MiscCounter :max="987" />
-                    </span>
-                    <span class="text-xl font-semibold">Happy Customers</span>
-                </div>
-                <div class="flex flex-col items-center gap-2 mx-auto">
+                        <span>Order Now</span>
 
-                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="feather feather-edit">
-                        <circle cx="12" cy="12" r="10"></circle><path d="M8 14s1.5 2 4 2 4-2 4-2"></path><line x1="9" y1="9" x2="9.01" y2="9"></line><line x1="15" y1="9" x2="15.01" y2="9"></line>
-                    </svg>
-                    <span class="text-2xl md:text-4xl lg:text-5xl font-semibold">
-                        <MiscCounter :max="10" />
-                    </span>
-                    <span class="text-xl font-semibold">NGO Served</span>
-                </div>
-                <div class="flex flex-col items-center gap-2 mx-auto">
-
-                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="feather feather-edit">
-                        <circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
-                    </svg>
-                    <span class="text-2xl md:text-4xl lg:text-5xl font-semibold">
-                        <MiscCounter :max="200" />
-                    </span>
-                    <span class="text-xl font-semibold">Online Orders</span>
-                </div>
-                <div class="flex flex-col items-center gap-2 mx-auto">
-
-                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="feather feather-edit">
-                        <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
-                        <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
-                    </svg>
-                    <span class="text-2xl md:text-4xl lg:text-5xl font-semibold">
-                        <MiscCounter :max="480" />
-                    </span>
-                    <span class="text-xl font-semibold">Customer Reviews</span>
-                </div>
-                <div class="flex flex-col items-center gap-2 mx-auto">
-
-                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="feather feather-award">
-                        <circle cx="12" cy="8" r="7"></circle>
-                        <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
-                    </svg>
-                    <span class="text-2xl md:text-4xl lg:text-5xl font-semibold">
-                        <MiscCounter :max="220" />
-                    </span>
-                    <span class="text-xl font-semibold">Events Completed</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-chevron-right">
+                            <polyline points="9 18 15 12 9 6"></polyline>
+                        </svg>
+                    </button>
                 </div>
             </div>
-        </div>
-        <div><span class="font-bold text-xl md:text-3xl lg:text-4xl text-[#206038]">Customer Testimonials</span>
-            <MiscCarosuel class="mt-5" :images="reviews.concat(reviews)"></MiscCarosuel>
+            <div class="min-h-screen flex flex-col max-w-6xl mx-auto justify-center">
+                <div><span class="font-bold text-xl md:text-3xl  lg:text-4xl text-[#206038]">Try Our New Arrivals</span>
+                    <div class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-5 items-center mt-5 gap-2">
+                        <MiscBox v-for="food in trymenu.concat(trymenu)" :key="food.name" :name="food.name"
+                            :image="food.image" :ratings="food.ratings" />
+                    </div>
+                </div>
+            </div>
+            <div class="h-screen flex flex-col justify-center">
+                <div class="p-2 rounded-3xl bg-[#CBE7D8] text-black text-2xl ">
+                    <div class="p-4 w-full flex items-center gap-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-search">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg><span class="text-black font-bold text-xl md:text-3xl lg:text-4xl">Search By
+                            Category</span>
+                    </div>
+
+                    <div class="grid grid-cols-1 lg:grid-cols-10  md:grid-cols-5 items-center mt-5  gap-8 ">
+                        <a v-for="food in menu.concat(menu.concat(menu.concat(menu.concat())))" :key="food.name"
+                            :href="food.link">
+                            <MiscCircle :name="food.name" :image="food.image" />
+                        </a>
+                    </div>
+                </div>
+            <div class=" bg-[#206038]  text-white w-full mt-12 p-4">
+                <div class="lg:flex items-center gap-2 justify-between w-full">
+                    <div class="flex flex-col items-center gap-2 mx-auto">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-users">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                        <span class="text-2xl md:text-4xl lg:text-5xl font-semibold">
+                            <MiscCounter :max="987" />
+                        </span>
+                        <span class="text-xl font-semibold">Happy Customers</span>
+                    </div>
+                    <div class="flex flex-col items-center gap-2 mx-auto">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-edit">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <path d="M8 14s1.5 2 4 2 4-2 4-2"></path>
+                            <line x1="9" y1="9" x2="9.01" y2="9"></line>
+                            <line x1="15" y1="9" x2="15.01" y2="9"></line>
+                        </svg>
+                        <span class="text-2xl md:text-4xl lg:text-5xl font-semibold">
+                            <MiscCounter :max="10" />
+                        </span>
+                        <span class="text-xl font-semibold">NGO Served</span>
+                    </div>
+                    <div class="flex flex-col items-center gap-2 mx-auto">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-edit">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="2" y1="12" x2="22" y2="12"></line>
+                            <path
+                                d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                            </path>
+                        </svg>
+                        <span class="text-2xl md:text-4xl lg:text-5xl font-semibold">
+                            <MiscCounter :max="200" />
+                        </span>
+                        <span class="text-xl font-semibold">Online Orders</span>
+                    </div>
+                    <div class="flex flex-col items-center gap-2 mx-auto">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-edit">
+                            <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
+                            <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
+                        </svg>
+                        <span class="text-2xl md:text-4xl lg:text-5xl font-semibold">
+                            <MiscCounter :max="480" />
+                        </span>
+                        <span class="text-xl font-semibold">Customer Reviews</span>
+                    </div>
+                    <div class="flex flex-col items-center gap-2 mx-auto">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-award">
+                            <circle cx="12" cy="8" r="7"></circle>
+                            <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                        </svg>
+                        <span class="text-2xl md:text-4xl lg:text-5xl font-semibold">
+                            <MiscCounter :max="220" />
+                        </span>
+                        <span class="text-xl font-semibold">Events Completed</span>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+            <div class="max-w-6xl mx-auto"><span
+                    class="font-bold text-xl md:text-3xl lg:text-4xl text-[#206038]">Customer
+                    Testimonials</span>
+                <MiscCarosuel class="mt-5" :images="reviews.concat(reviews)"></MiscCarosuel>
+            </div>
         </div>
     </div>
+
 </template>
 
 <script setup lang="ts">
 const foods = [
-    { name: "Dosa", image: "/dosa.jpg"},
-    { name: "Idly", image: "/idli.jpg"},
-    { name: "Idly", image: "/idli.jpg"},
-    { name: "Parotta", image: "/parotta.jpg"},
-    { name: "Parotta", image: "/parotta.jpg"},
-    { name: "Idly", image: "/idli.jpg"},
-    { name: "Parotta", image: "/parotta.jpg"},
+    { name: "Dosa", image: "/dosa.jpg" },
+    { name: "Idly", image: "/idli.jpg" },
+    { name: "Idly", image: "/idli.jpg" },
+    { name: "Parotta", image: "/parotta.jpg" },
+    { name: "Parotta", image: "/parotta.jpg" },
+    { name: "Idly", image: "/idli.jpg" },
+    { name: "Parotta", image: "/parotta.jpg" },
 
 
 
 ]
 
-const trymenu =[
-    { name: "Dosa", image: "/dosa.jpg", ratings:5},
-    { name: "Idly", image: "/idli.jpg",ratings:5},
-    { name: "Idly", image: "/idli.jpg",ratings:5},
-    { name: "Parotta", image: "/parotta.jpg",ratings:5},
-    { name: "Parotta", image: "/parotta.jpg",ratings:5},
-    { name: "Idly", image: "/idli.jpg",ratings:5},
-    { name: "Parotta", image: "/parotta.jpg",ratings:5},
+const trymenu = [
+    { name: "Dosa", image: "/dosa.jpg", ratings: 5 },
+    { name: "Idly", image: "/idli.jpg", ratings: 5 },
+    { name: "Idly", image: "/idli.jpg", ratings: 5 },
+    { name: "Parotta", image: "/parotta.jpg", ratings: 5 },
+    { name: "Parotta", image: "/parotta.jpg", ratings: 5 },
 
 ]
 const menu = [
-    { name: "Payasam", image: "/payasam/elaneer_payasam.jpg" ,link:"/payasam"},
-    { name: "Idly", image: "/idli.jpg" ,link:"/idly"},
-    { name: "Idly", image: "/idli.jpg" ,link:"/"} ,
-    { name: "Parotta", image: "/parotta.jpg",link:"/"} ,
-    { name: "Idly", image: "/idli.jpg",link:"/"},
+    { name: "Payasam", image: "/payasam/elaneer_payasam.jpg", link: "/payasam" },
+    { name: "Idly", image: "/idli.jpg", link: "/idly" },
+    { name: "Idly", image: "/idli.jpg", link: "/" },
+    { name: "Parotta", image: "/parotta.jpg", link: "/" },
+    { name: "Idly", image: "/idli.jpg", link: "/" },
 
 ]
 

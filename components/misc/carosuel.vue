@@ -1,5 +1,5 @@
 <template>
-    <div class="w-full flex flex-col items-center">
+    <div class="w-full flex flex-col items-center gap-4">
         <div class="flex flex-row items-center md:w-[58rem] w-full overflow-x-hidden relative p-[1rem]">
             <div class="relative inset-0 flex flex-row gap-[1rem] justify-start transition-all duration-500 ease-in-out transform w-full md:w-[56rem]"
                 :style="{ transform: `translateX(-${current * 19}rem)` }">

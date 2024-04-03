@@ -1,19 +1,19 @@
 <template>
-    <header class="fixed lg:relative top-0 left-0 w-full">
-        <div class="bg-[#CBE7D8] w-full">
-            <div class="flex gap-12 items-center justify-between p-2 max-w-[100rem] mx-auto">
+    <header class="fixed lg:relative top-0 left-0 w-full shadow:xl">
+        <div class="bg-[#CBE7D8] w-full shadow:xl">
+            <div class="flex gap-12 items-center justify-between p-2 max-w-[100rem] mx-auto shadow:xl">
                 <div class="flex items-center gap-4 w-full">
                     <img src="/logo.png" class="w-12 h-12" alt="Jolly" />
                     <div class="uppercase text-2xl  w-full text-[#206038] font-bold">Jolly Delights</div>
                 </div>
                 <div class="flex items-center justify-between gap-8 text-[#206038] grow-1 w-full">
-                    <nav class="flex text-sm items-center gap-12">
-                        <a href="/">Home</a>
-                        <a href="/menu">Menu</a>
-                        <a href="/">FAQS</a>
-                        <a href="/getquote">Get Quotation</a>
-                        <a href="/aboutus">About Us</a>
-                        <a href="/contact" class="flex items-center gap-2">
+                    <nav class="flex text-sm items-center gap-12 ">
+                        <a class="hover:font-bold transition duration-500 ease-in-out transform hover:scale-110 " href="/">Home</a>
+                        <a class="hover:font-bold transition duration-500 ease-in-out transform hover:scale-110 " href="/menu">Menu</a>
+                        <a class="hover:font-bold transition duration-500 ease-in-out transform hover:scale-110 " href="/">FAQS</a>
+                        <a class="hover:font-bold transition duration-500 ease-in-out transform hover:scale-110 " href="/getquote">Get Quotation</a>
+                        <a class="hover:font-bold transition duration-500 ease-in-out transform hover:scale-110 " href="/aboutus">About Us</a>
+                        <a class="hover:font-bold transition duration-500 ease-in-out transform hover:scale-110 flex items-center gap-2 " href="/contact" >
                             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
                                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                                 class="feather feather-phone">
