@@ -9,17 +9,17 @@
                     <span>View more</span>
                 </button>
                 <button
-                    class="p-6 uppercase bg-[#CBE7D8] transition ease-in-out hover:bg-[#ffcf03] border-green-800 border-4 text-black font-black text-sm rounded-full flex items-center gap-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="feather feather absolute z-10 animate-ping">
+                    class="p-6 uppercase bg-[#CBE7D8] transition ease-in-out duration 600 hover:bg-[#ffcf03] hover:scale-105  border-green-800 border-4 text-black font-black text-sm rounded-full flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#206038"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" 
+                        class="feather feather absolute z-10 ">
                         <path
                             d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
                         </path>
                     </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="feather feather-phone">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#206038"
+                        stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" 
+                        class="feather feather-phone animate-ping">
                         <path
                             d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
                         </path>
@@ -81,39 +81,10 @@
                 </div>
             </div>
         </div>
-        <div class="min-h-screen w-full p-4 flex flex-col justify-center">
-            <div class=" bg-[#206038] text-white w-full mt-12 p-4">
-                <div class="lg:flex items-center gap-2  justify-between w-full">
-                    <div class="flex flex-col items-center gap-2 mx-auto">
-
-                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="feather feather-users">
-                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                            <circle cx="9" cy="7" r="4"></circle>
-                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-                        </svg>
-                        <span class="text-2xl md:text-4xl lg:text-5xl font-semibold">
-                            <MiscCounter :max="987" />
-                        </span>
-                        <span class="text-xl font-semibold">Happy Customers</span>
-                    </div>
-                    <div class="flex flex-col items-center gap-2 mx-auto">
-
-                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="feather feather-edit">
-                            <circle cx="12" cy="12" r="10"></circle>
-                            <path d="M8 14s1.5 2 4 2 4-2 4-2"></path>
-                            <line x1="9" y1="9" x2="9.01" y2="9"></line>
-                            <line x1="15" y1="9" x2="15.01" y2="9"></line>
-                        </svg>
-                        <span class="text-2xl md:text-4xl lg:text-5xl font-semibold">
-                            <MiscCounter :max="10" />
-                        </span>
-                        <span class="text-xl font-semibold">NGO Served</span>
-                    </div>
+        <div class="relative min-h-screen w-full p-8 flex flex-col bg-[#ffe6e6] justify-center">
+            <div class=" bg-[#206038] text-white  max-w-6xl mx-auto mt-12 p-6">
+                <div class="lg:flex items-center gap-8  justify-between w-full">
+                    
                     <div class="flex flex-col items-center gap-2 mx-auto">
 
                         <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none"
