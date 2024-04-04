@@ -1,15 +1,19 @@
 <template>
     <div
-        class="bg-[#CBE7D8] mx-auto mt-4 p-2 py-4 rounded-xl  hover:border-green-800 hover:border-4 object-cover transition duration-500 ease-in-out transform hover:scale-105">
-        <div class="flex flex-col items-center md:w-48 sm:w-36 w-24  ">
-            <div class="rounded-xl md:w-44 md:h-44 sm:w-32 sm:h-32  h-24 w-24">
-                <img class="rounded-xl md:w-44 md:h-44 sm:w-32 sm:h-32 w-24 h-24 " :src="image" />
+        class="overflow-hidden bg-[#CBE7D8] mx-auto mt-4 rounded-xl ring-4 ring-transparent hover:ring-green-800 transition duration-500 ease-in-out transform hover:scale-105">
+        <div class="flex flex-col items-center xl:w-48 lg:w-36 w-24">
+            <div class="flex flex-col w-full gap-2 px-2 py-4">
+                <div class="rounded-xl xl:w-44 xl:h-44 lg:w-32 lg:h-32  h-24 w-24">
+                    <img class="rounded-xl xl:w-44 xl:h-44 lg:w-32 lg:h-32 w-24 h-24 " :src="image" />
+                </div>
+                <div class="md:text-lg mt-2 lg:text-base truncate font-semibold  ">{{ name }}</div>
+                <MiscRating :score="(ratings ?? 5) * 20" />
             </div>
-            <div class="md:text-lg mt-2 lg:text-base truncate font-semibold  ">{{ name }}</div>
-            <MiscRating :score="(ratings ?? 5) * 20" />
             <button
-                class="rounded-xl  md:w-20 sm:w-20 hover:w-full w-20 bg-green-800 transition ease-in-out  block mt-2 p-1 w-full mx-auto rounded-md text-white text-xs sm:text-sm md:text-base"
-                @click="() => emit(`added`)">A</button>
+                class="w-full bg-green-800 transition ease-in-out block p-1 w-full mx-auto text-white text-xs sm:text-sm md:text-base"
+                @click="() => emit(`added`)">
+                <MiscWeirdbutton>Add</MiscWeirdbutton>
+            </button>
         </div>
     </div>
 </template>
