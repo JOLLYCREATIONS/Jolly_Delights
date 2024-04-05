@@ -13,7 +13,7 @@
                         <a class="font-bold transition duration-500 ease-in-out transform hover:scale-125 opacity-[0.75] hover:opacity-100 hover:text-[#467847]"
                             href="/menu">Menu</a>
                         <a class="font-bold transition duration-500 ease-in-out transform hover:scale-125 opacity-[0.75] hover:opacity-100 hover:text-[#467847]"
-                            href="/">FAQS</a>
+                            href="/faq">FAQS</a>
                         <a class="font-bold transition duration-500 ease-in-out transform hover:scale-125 opacity-[0.75] hover:opacity-100 hover:text-[#467847]"
                             href="/getquote">Get Quotation</a>
                         <a class="font-bold transition duration-500 ease-in-out transform hover:scale-125 opacity-[0.75] hover:opacity-100 hover:text-[#467847]"

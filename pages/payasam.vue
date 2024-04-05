@@ -3,7 +3,7 @@
         <img src="/header banner/3.png" class="w-full h-[50vh] object-cover  absolute z-10 top-0">
     </div>
     <div class="p-4 mt-8 rounded-xl bg-[#fffff] text-center text-[#000000] font-bold text-6xl w-full">PAYASAM</div>
-    <div class="p-8 max-w-8xl mx-auto grid grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 items-center mt-15 gap-y-10 gap-8 rounded-2xl">
+    <div class="p-8 max-w-7xl mx-auto grid grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 items-center mt-15 gap-y-10 gap-8 rounded-2xl">
             <MiscBox v-for="payasams in payasam.concat()" :key="payasams.name" :name="payasams.name" :image="payasams.image" class="mx-auto" />
         </div>
 </template>

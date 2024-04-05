@@ -2,7 +2,7 @@
     <div
         class="overflow-hidden bg-[#CBE7D8] mx-auto mt-4 rounded-xl ring-4 ring-transparent hover:ring-green-800 transition duration-500 ease-in-out transform hover:scale-105">
         <div class="flex flex-col items-center xl:w-48 lg:w-36 w-24">
-            <div class="flex flex-col w-full gap-2 px-2 py-4">
+            <div class="flex flex-col w-full gap-2 px-2 py-2">
                 <div class="rounded-xl xl:w-44 xl:h-44 lg:w-32 lg:h-32  h-24 w-24">
                     <img class="rounded-xl xl:w-44 xl:h-44 lg:w-32 lg:h-32 w-24 h-24 " :src="image" />
                 </div>
