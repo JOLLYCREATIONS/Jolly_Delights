@@ -1,25 +1,25 @@
 <template>
-    <div class="flex flex-col relative -top-[1.5rem] w-full items-center space-y-12">
+    <div class="flex flex-col relative w-full items-center space-y-12">
         <div class="relative w-full h-screen flex flex-col justify-start">
             <video src="/promo.mp4" muted autoplay :controls="false" loop
                 class="w-full h-screen object-cover  absolute z-10"></video>
-            <div class="absolute z-20 w-full bottom-24 flex flex-col-reverse items-center justify-center gap-16 ">
-                <a href="#main-content" class="w-24 h-24 relative">
+            <div class="absolute z-20 w-full bottom-10 flex flex-col-reverse items-center justify-center gap-8">
+                <button class="w-20 h-20 relative" @click="scrollToMain">
                     <div
-                        class="w-24 h-24 mx-auto p-6 uppercase bg-[#CBE7D8] transition ease-in-out border-green-800 border-4 text-black hover:bg-[#ffcf03] font-black text-sm rounded-full flex items-center gap-2">
+                        class="w-16 h-16 mx-auto p-2 uppercase bg-[#CBE7D8] transition ease-in-out border-green-800 border-4 text-black hover:bg-[#ffcf03] font-black text-sm rounded-full flex items-center gap-2">
 
-                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none"
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                             class="feather feather-chevron-right mx-auto">
                             <polyline points="18 6 12 12 6 6" class="bounceAlpha" style="animation-delay:0.2s;"></polyline>
                             <polyline points="18 17 12 23 6 17" class="bounceAlpha"></polyline>
                         </svg>
                     </div>
-                </a>
-                <button class="relative w-24 h-24">
+                </button>
+                <a href="#" class="relative w-16 h-16">
                     <div
-                        class="inset-0 p-6 uppercase bg-[#CBE7D8] hover:bg-[#ffcf03] transition ease-in-out duration 600 hover:scale-105  border-green-800 border-4 text-black font-black text-sm rounded-full flex items-center gap-2 absolute z-10 mx-auto">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"
+                        class="inset-0 p-2 uppercase bg-[#CBE7D8] hover:bg-[#ffcf03] transition ease-in-out duration 600 hover:scale-105  border-green-800 border-4 text-black font-black text-sm rounded-full flex items-center gap-2 absolute z-10 mx-auto">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
                             fill="#206038" stroke="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                             class="feather mx-auto">
                             <path
@@ -28,8 +28,8 @@
                         </svg>
                     </div>
                     <div
-                        class="inset-0 p-6 uppercase bg-[#CBE7D8]  transition ease-in-out duration 600 hover:scale-105  border-green-800 border-4 text-black font-black text-sm rounded-full flex items-center gap-2 absolute z-0 mx-auto animate-ping">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        class="inset-0 p-2 uppercase bg-[#CBE7D8]  transition ease-in-out duration 600 hover:scale-105  border-green-800 border-4 text-black font-black text-sm rounded-full flex items-center gap-2 absolute z-0 mx-auto animate-ping">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
                             fill="#206038" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                             stroke-linejoin="round" class="feather">
                             <path
@@ -37,7 +37,7 @@
                             </path>
                         </svg>
                     </div>
-                </button>
+                </a>
             </div>
         </div>
         <div class="w-full p-8 flex flex-col gap-12" id="main-content">
@@ -229,6 +229,10 @@
 </style>
 
 <script setup lang="ts">
+function scrollToMain() {
+    window.scrollTo({ top: window.screen.height, left: 0, behavior: "smooth" })
+}
+
 const foods = [
     { name: "Dosa", image: "/dosa.jpg" },
     { name: "Idly", image: "/idli.jpg" },
