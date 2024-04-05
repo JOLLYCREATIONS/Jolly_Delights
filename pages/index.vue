@@ -253,8 +253,8 @@ const trymenu = [
 const menu = [
     { name: "Payasam", image: "/payasam/elaneer_payasam.jpg", link: "/payasam" },
     { name: "Idly", image: "/idli.jpg", link: "/idly" },
-    { name: "Idly", image: "/idli.jpg", link: "/" },
-    { name: "Parotta", image: "/parotta.jpg", link: "/" },
+    { name: "Sweets", image: "/sweets/1.jpg", link: "/sweets" },
+    { name: "Kootu", image: "/kootu/1.jpg", link: "/kootu" },
     { name: "Idly", image: "/idli.jpg", link: "/" },
     { name: "Parotta", image: "/parotta.jpg", link: "/" },
 

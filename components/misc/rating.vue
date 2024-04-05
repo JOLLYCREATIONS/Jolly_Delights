@@ -8,7 +8,7 @@
                 </clipPath>
                 <linearGradient :id="`progress${score}`">
                     <stop :offset="`${score}%`" stop-color="#e6b127" />
-                    <stop :offset="`${score + 1}%`" stop-color="black" />
+                    <stop :offset="`${score + 1}%`" stop-color="#206038" />
                 </linearGradient>
             </defs>
             <rect width="100" height="20"
