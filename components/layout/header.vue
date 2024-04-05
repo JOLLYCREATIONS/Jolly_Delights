@@ -8,17 +8,17 @@
                 </a>
                 <div class="flex items-center justify-end mr-4 gap-8 text-[#206038] grow-1 w-full">
                     <nav class="flex text-sm justify-end items-center gap-12 ">
-                        <a class="font-bold transition duration-500 ease-in-out transform hover:scale-125 opacity-[0.7] hover:opacity-100"
+                        <a class="font-bold transition duration-500 ease-in-out transform hover:scale-125 opacity-[0.75] hover:opacity-100 hover:text-[#467847]"
                             href="/">Home</a>
-                        <a class="font-bold transition duration-500 ease-in-out transform hover:scale-125 opacity-[0.7] hover:opacity-100"
+                        <a class="font-bold transition duration-500 ease-in-out transform hover:scale-125 opacity-[0.75] hover:opacity-100 hover:text-[#467847]"
                             href="/menu">Menu</a>
-                        <a class="font-bold transition duration-500 ease-in-out transform hover:scale-125 opacity-[0.7] hover:opacity-100"
+                        <a class="font-bold transition duration-500 ease-in-out transform hover:scale-125 opacity-[0.75] hover:opacity-100 hover:text-[#467847]"
                             href="/">FAQS</a>
-                        <a class="font-bold transition duration-500 ease-in-out transform hover:scale-125 opacity-[0.7] hover:opacity-100"
+                        <a class="font-bold transition duration-500 ease-in-out transform hover:scale-125 opacity-[0.75] hover:opacity-100 hover:text-[#467847]"
                             href="/getquote">Get Quotation</a>
-                        <a class="font-bold transition duration-500 ease-in-out transform hover:scale-125 opacity-[0.7] hover:opacity-100"
+                        <a class="font-bold transition duration-500 ease-in-out transform hover:scale-125 opacity-[0.75] hover:opacity-100 hover:text-[#467847]"
                             href="/aboutus">About Us</a>
-                        <a class="font-bold transition duration-500 ease-in-out transform hover:scale-125 opacity-[0.7] hover:opacity-100 flex items-center gap-2 "
+                        <a class="font-bold transition duration-500 ease-in-out transform hover:scale-125 opacity-[0.75] hover:opacity-100 hover:text-[#467847] flex items-center gap-2 "
                             href="/contact">
                             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"

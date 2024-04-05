@@ -3,8 +3,8 @@
         <div class="max-w-7xl w-full mx-auto py-4 relative">
             <hr class="w-full border border-black" />
             <div class="flex w-full items-center justify-center">
-                <div class="font-semibold text-2xl lg:text-4xl py-8 text-center shrink-0"><span
-                        class="font-bold">Delights</span> in
+                <div class="font-semibold text-2xl text-[#ffcf03] lg:text-4xl py-8 text-center shrink-0"><span
+                        class="font-bold ">Delights</span> in
                     every bite</div>
                 <div class="absolute top-16 right-8">
                     <img src="/pure_veg.png" class="relative right-0 w-8 h-8" />

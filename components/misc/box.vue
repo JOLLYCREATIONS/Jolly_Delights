@@ -10,9 +10,9 @@
                 <MiscRating :score="(ratings ?? 5) * 20" />
             </div>
             <button
-                class="w-full bg-green-800 transition ease-in-out block p-1 w-full mx-auto text-white text-xs sm:text-sm md:text-base"
+                class="w-full bg-green-800 transition ease-in-out block  w-full mx-auto text-white text-xs sm:text-sm md:text-base"
                 @click="() => emit(`added`)">
-                <MiscWeirdbutton>Add</MiscWeirdbutton>
+                <MiscWeirdbutton>Add To Menu</MiscWeirdbutton>
             </button>
         </div>
     </div>
