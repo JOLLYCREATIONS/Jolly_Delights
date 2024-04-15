@@ -227,6 +227,14 @@
     animation-timing-function: linear;
 }
 
+.feather-award:hover {
+    stroke: #ffcf03; /* Change the stroke color to yellow when hovered */
+}
+
+.feather-edit:hover {
+    stroke: #ffcf03; /* Change the stroke color to yellow when hovered */
+}
+
 
 </style>
 
