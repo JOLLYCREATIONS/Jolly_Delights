@@ -4,7 +4,14 @@
             <div class="flex gap-12 items-center justify-between p-2 w-full mx-auto ">
                 <a href="/" class="flex items-center gap-4 w-full">
                     <img src="/logo.png" class="w-12 h-12" alt="Jolly" />
-                    <div class="uppercase text-2xl  w-full text-[#206038] font-bold">Jolly Delights</div>
+                    <div class="w-full">
+                        <div class="uppercase text-2xl text-[#206038] font-bold">Jolly Delights</div>
+                        <div class="flex items-center">
+                            <div class="text-md text-white font-bold bg-[#ffcf03] px-4 py-1 rounded">
+                                Delights in every bite
+                            </div>
+                        </div>
+                    </div>
                 </a>
                 <div class="flex items-center justify-end mr-4 gap-8 text-[#206038] grow-1 w-full">
                     <nav class="flex text-sm justify-end items-center gap-12 ">
