@@ -103,7 +103,7 @@
                     <div class="bg-[#206038]  rounded-xl ring-4 ring-transparent hover:ring-[#ffcf03] p-4 flex flex-col items-center gap-2 mx-auto w-72">
                         <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="feather feather-award">
+                            class="feather feather-award ">
                             <circle cx="12" cy="8" r="7"></circle>
                             <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
                         </svg>
@@ -115,7 +115,7 @@
                 </div>
                 <!-- 2 level -->
                 <div class="lg:flex items-center gap-8  justify-center mx-auto">
-                    <div class="bg-[#206038] rounded-xl ring-4 ring-transparent hover:ring-[#ffcf03] p-4 flex flex-col items-center gap-2 mx-auto w-72">
+                    <div class="bg-[#206038] rounded-xl ring-4 ring-transparent  hover:ring-[#ffcf03] p-4 flex flex-col items-center gap-2 mx-auto w-72">
 
                         <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -226,6 +226,8 @@
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
+
+
 </style>
 
 <script setup lang="ts">
