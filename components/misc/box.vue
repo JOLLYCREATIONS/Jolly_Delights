@@ -12,7 +12,8 @@
             <button
                 class="w-full bg-green-800 transition ease-in-out block  w-full mx-auto text-white text-xs sm:text-sm md:text-base"
                 @click="() => emit(`added`)">
-                <MiscWeirdbutton>Add To Menu</MiscWeirdbutton>
+                <MiscWeirdbutton>Add to Menu</MiscWeirdbutton>
+                
             </button>
         </div>
     </div>
