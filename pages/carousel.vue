@@ -2,16 +2,16 @@
     <div class="relative overflow-hidden">
       <div class="absolute inset-0 flex items-center justify-center">
         <div
-          class="w-full h-full flex items-center justify-center transition-transform duration-500 transform"
+          class="w-full h-full  flex items-center justify-center transition-transform duration-500 transform"
           :style="`transform: translateX(${-currentIndex * 60}%) rotateY(${-currentIndex * 45}deg);`"
         >
           <div
             v-for="(item, index) in items"
             :key="index"
-            class="w-full max-w-xs mx-auto px-4 transform transition-transform duration-500"
+            class="w-full  max-w-xs mx-auto px-4 transform transition-transform duration-500"
             :class="{ 'opacity-100 scale-100': currentIndex === index, 'opacity-0 scale-90': currentIndex !== index }"
           >
-            <img :src="item.image" alt="Slider Image" class="w-full rounded-lg shadow-lg" />
+            <img :src="item.image" alt="Slider Image" class="w-full  rounded-lg shadow-lg" />
           </div>
         </div>
       </div>

@@ -87,7 +87,7 @@
                             Category</span>
                     </div>
 
-                    <div class="grid grid-cols-1 lg:grid-cols-6  md:grid-cols-5 items-center mt-5  gap-5 ">
+                    <div class="grid grid-cols-1 lg:grid-cols-8  md:grid-cols-6 items-center mt-5  gap-5 ">
                         <a v-for="food in menu.concat(menu.concat(menu.concat()))" :key="food.name" :href="food.link">
                             <MiscCircle :name="food.name" :image="food.image" />
                         </a>
@@ -269,6 +269,8 @@ const menu = [
     { name: "Idly", image: "/idli.jpg", link: "/idly" },
     { name: "Sweets", image: "/sweets/1.jpg", link: "/sweets" },
     { name: "Kootu", image: "/kootu/1.jpg", link: "/kootu" },
+    { name: "Idly", image: "/idli.jpg", link: "/" },
+    { name: "Parotta", image: "/parotta.jpg", link: "/" },
     { name: "Idly", image: "/idli.jpg", link: "/" },
     { name: "Parotta", image: "/parotta.jpg", link: "/" },
 
