@@ -16,7 +16,7 @@
                         </svg>
                     </div>
                 </button>
-                <a href="#" class="relative w-16 h-16">
+                <a href="tel:+917299932518" class="relative w-16 h-16">
                     <div
                         class="inset-0 p-2 uppercase bg-[#CBE7D8] hover:bg-[#ffcf03] transition ease-in-out duration 600 hover:scale-105  border-green-800 border-4 text-black font-black text-sm rounded-full flex items-center gap-2 absolute z-10 mx-auto">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
@@ -100,7 +100,7 @@
             <div class="flex flex-col gap-8 text-white max-w-6xl mx-auto mt-12 p-6">
                 <!-- 1 level -->
                 <div class="lg:flex items-center gap-8 justify-center mx-auto">
-                    <div class="bg-[#206038]  rounded-xl ring-4 ring-transparent hover:ring-[#ffcf03] p-4 flex flex-col items-center gap-2 mx-auto w-72">
+                    <div class="pyracard bg-[#206038]  rounded-xl ring-4 ring-transparent hover:ring-[#ffcf03] p-4 flex flex-col items-center gap-2 mx-auto w-72">
                         <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                             class="feather feather-award ">
@@ -115,7 +115,7 @@
                 </div>
                 <!-- 2 level -->
                 <div class="lg:flex items-center gap-8  justify-center mx-auto">
-                    <div class="bg-[#206038] rounded-xl ring-4 ring-transparent  hover:ring-[#ffcf03] p-4 flex flex-col items-center gap-2 mx-auto w-72">
+                    <div class="pyracard bg-[#206038] rounded-xl ring-4 ring-transparent  hover:ring-[#ffcf03] p-4 flex flex-col items-center gap-2 mx-auto w-72">
 
                         <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -128,7 +128,7 @@
                         </span>
                         <span class="text-xl font-semibold">Customer Reviews</span>
                     </div>
-                    <div class="bg-[#206038]  rounded-xl ring-4 ring-transparent hover:ring-[#ffcf03] p-4 flex flex-col items-center gap-2 mx-auto w-72">
+                    <div class="pyracard bg-[#206038]  rounded-xl ring-4 ring-transparent hover:ring-[#ffcf03] p-4 flex flex-col items-center gap-2 mx-auto w-72">
                         <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                             class="feather feather-award">
@@ -144,7 +144,7 @@
                 <!-- 3 level -->
                 <div class="lg:flex items-center gap-8 justify-center mx-auto">
 
-                    <div class="bg-[#206038] rounded-xl ring-4 ring-transparent hover:ring-[#ffcf03] p-4 flex flex-col items-center gap-2 mx-auto w-72">
+                    <div class="pyracard bg-[#206038] rounded-xl ring-4 ring-transparent hover:ring-[#ffcf03] p-4 flex flex-col items-center gap-2 mx-auto w-72">
 
                         <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -160,7 +160,7 @@
                         </span>
                         <span class="text-xl font-semibold">Online Orders</span>
                     </div>
-                    <div class="bg-[#206038]  rounded-xl ring-4 ring-transparent hover:ring-[#ffcf03] p-4 flex flex-col items-center gap-2 mx-auto w-72">
+                    <div class="pyracard bg-[#206038]  rounded-xl ring-4 ring-transparent hover:ring-[#ffcf03] p-4 flex flex-col items-center gap-2 mx-auto w-72">
 
                         <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -173,7 +173,7 @@
                         </span>
                         <span class="text-xl font-semibold">Customer Reviews</span>
                     </div>
-                    <div class="bg-[#206038] rounded-xl ring-4 ring-transparent hover:ring-[#ffcf03] p-4 flex flex-col items-center gap-2 mx-auto w-72">
+                    <div class="pyracard bg-[#206038] rounded-xl ring-4 ring-transparent hover:ring-[#ffcf03] p-4 flex flex-col items-center gap-2 mx-auto w-72">
                         <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                             class="feather feather-award">
@@ -227,11 +227,7 @@
     animation-timing-function: linear;
 }
 
-.feather-award:hover {
-    stroke: #ffcf03; /* Change the stroke color to yellow when hovered */
-}
-
-.feather-edit:hover {
+.pyracard:hover .feather {
     stroke: #ffcf03; /* Change the stroke color to yellow when hovered */
 }
 

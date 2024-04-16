@@ -17,7 +17,10 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 169ms;
 }
-
+@font-face {
+    font-family: gagalin;
+    src: url(/Gagalin-Regular.otf);
+}
 .page-enter,
 .page-leave-active {
   opacity: 0;

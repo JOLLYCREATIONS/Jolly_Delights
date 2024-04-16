@@ -1,10 +1,10 @@
 <template>
     <div class="w-full flex flex-col items-center gap-4">
-        <div class="flex flex-row items-center md:w-[58rem] w-full overflow-x-hidden relative p-[1rem]">
+        <div class="flex flex-row items-center md:w-[58rem] w-full  overflow-x-hidden relative p-[1rem]">
             <div class="relative inset-0 flex flex-row gap-[1rem] justify-start transition-all duration-500 ease-in-out transform w-full md:w-[56rem]"
                 :style="{ transform: `translateX(-${current * 19}rem)` }">
                 <div v-for="item in images" :key="item"
-                    class="p-[0.5rem] relative flex-shrink-0 flex flex-col items-start justify-start h-60 w-[18rem] px-2 py-4 shadow-xl rounded-xl">
+                    class="bg-[#CBE7D8] p-[0.5rem] relative flex-shrink-0 flex flex-col items-start justify-start h-60 w-[18rem] px-2 py-4 shadow-xl rounded-xl">
                     <div class="text-lg font-bold">{{ item.name }}</div>
                     <MiscRating :score="item.ratings * 20" />
                     <div class="text-sm">{{ item.review }}</div>

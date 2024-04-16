@@ -11,7 +11,7 @@
             class="w-full  max-w-xs mx-auto px-4 transform transition-transform duration-500"
             :class="{ 'opacity-100 scale-100': currentIndex === index, 'opacity-0 scale-90': currentIndex !== index }"
           >
-            <img :src="item.image" alt="Slider Image" class="w-full  rounded-lg shadow-lg" />
+            <img :src="item.image" alt="Slider Image" class="w-full rounded-lg shadow-lg" />
           </div>
         </div>
       </div>

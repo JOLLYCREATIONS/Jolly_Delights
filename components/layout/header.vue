@@ -5,9 +5,9 @@
                 <a href="/" class="flex items-center gap-4 w-full">
                     <img src="/logo.png" class="w-12 h-12" alt="Jolly" />
                     <div class="w-full">
-                        <div class="uppercase text-2xl text-[#206038] font-bold transition duration-500 ease-in-out transform hover:scale-101 opacity-[0.75] hover:opacity-100 hover:text-[#467847]">Jolly Delights</div>
+                        <div class="uppercase text-3xl text-[#206038] font-bold transition duration-500 ease-in-out transform hover:scale-101 opacity-[0.75] hover:opacity-100 font-[gagalin] hover:text-[#467847]">Jolly Delights</div>
                         <div class="flex px-2 items-center">
-                            <div class="text-md text-white font-bold bg-[#ffcf03] hover:bg-[#206038] px-1 py-1 rounded">
+                            <div class="text-md text-white font-bold font-[gagalin] bg-[#ffcf03] hover:bg-[#206038] px-1 py-1 rounded">
                                 Delights in every bite
                             </div>
                         </div>
